@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.6 on win32)" generated="20220823 11:40:05.516" rpa="false" schemaversion="3">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="CloseAll" source="C:\Users\Saurabh\PycharmProjects\Automation\TestCases\CloseAll.robot">
+<test id="s1-s1-t1" name="MyTestCase" line="6">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://demowebshop.tricentis.com/register</arg>
+<arg>Firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220823 11:40:05.831" level="INFO">Opening browser 'Firefox' to base url 'http://demowebshop.tricentis.com/register'.</msg>
+<msg timestamp="20220823 11:40:05.832" level="INFO">Firefox driver log is always forced to to: C:\Users\Saurabh\PycharmProjects\Automation\pabot_results\2\geckodriver-1.log</msg>
+<status status="PASS" starttime="20220823 11:40:05.831" endtime="20220823 11:40:13.854"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220823 11:40:13.855" endtime="20220823 11:40:14.143"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://automationpractice.com/index.php</arg>
+<arg>Firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220823 11:40:14.145" level="INFO">Opening browser 'Firefox' to base url 'http://automationpractice.com/index.php'.</msg>
+<msg timestamp="20220823 11:40:14.147" level="INFO">Firefox driver log is always forced to to: C:\Users\Saurabh\PycharmProjects\Automation\pabot_results\2\geckodriver-2.log</msg>
+<status status="PASS" starttime="20220823 11:40:14.144" endtime="20220823 11:40:35.917"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220823 11:40:35.917" endtime="20220823 11:40:36.177"/>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220823 11:40:36.178" endtime="20220823 11:40:37.998"/>
+</kw>
+<status status="PASS" starttime="20220823 11:40:05.830" endtime="20220823 11:40:37.998"/>
+</test>
+<status status="PASS" starttime="20220823 11:40:05.552" endtime="20220823 11:40:37.999"/>
+</suite>
+<status status="PASS" starttime="20220823 11:40:05.531" endtime="20220823 11:40:38.002"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="CloseAll">Suites.CloseAll</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

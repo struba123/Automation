@@ -1,0 +1,20 @@
+1661059539839	geckodriver	INFO	Listening on 127.0.0.1:52894
+1661059542927	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52895" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Saurabh\\AppData\\Local\\Temp\\rust_mozprofile7TZcrb"
+1661059543893	Marionette	INFO	Marionette enabled
+1661059543901	Marionette	INFO	Listening on port 52904
+WebDriver BiDi listening on ws://localhost:52895
+Read port: 52904
+1661059544127	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Saurabh\\AppData\\Local\\Temp\\rust_mozprofile7TZcrb\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:52895/devtools/browser/92eed869-fbc6-457e-beab-c436e67e59f1
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://admin-demo.nopcommerce.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://admin-demo.nopcommerce.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://admin-demo.nopcommerce.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://admin-demo.nopcommerce.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://admin-demo.nopcommerce.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://admin-demo.nopcommerce.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1661059552918	Marionette	INFO	Stopped listening on port 52904
+JavaScript error: https://admin-demo.nopcommerce.com/lib_npm/jquery/jquery.min.js?v=meexYto0mAKr6PjyeE37ROc-We8, line 2: NS_ERROR_NOT_INITIALIZED: 

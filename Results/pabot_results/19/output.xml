@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.6 on win32)" generated="20220901 10:38:35.904" rpa="false" schemaversion="3">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="SwitchMultipleBrowser" source="C:\Users\Saurabh\PycharmProjects\Automation\TestCases\SwitchMultipleBrowser.robot">
+<test id="s1-s1-t1" name="MultipleBrowseTest" line="7">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.google.co.in/</arg>
+<arg>Edge</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220901 10:38:36.107" level="INFO">Opening browser 'Edge' to base url 'https://www.google.co.in/'.</msg>
+<msg timestamp="20220901 10:38:39.727" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20220901 10:38:39.728" level="FAIL">WebDriverException: Message: unknown error: Microsoft Edge failed to start: crashed.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.)
+Stacktrace:
+Backtrace:
+	Microsoft::Applications::Events::EventProperties::unpack [0x00007FF7163B6312+24642]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF716309A62+334098]
+	Ordinal0 [0x00007FF715EA7915+620821]
+	Ordinal0 [0x00007FF715ECFC83+785539]
+	Ordinal0 [0x00007FF715ECA9EE+764398]
+	Ordinal0 [0x00007FF715F045FF+1000959]
+	Ordinal0 [0x00007FF715EFECB3+978099]
+	Ordinal0 [0x00007FF715ED5F00+810752]
+	Ordinal0 [0x00007FF715ED7508+816392]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71616D578+135480]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF716154C77+34871]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF716157CFC+47292]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF715FB11B6+23222]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF716310F6B+364059]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF7163159A4+383060]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF716315AFD+383405]
+	Microsoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF71632040E+39918]
+	BaseThreadInitThunk [0x00007FFC2DA554E0+16]
+	RtlUserThreadStart [0x00007FFC2DD8485B+43]
+</msg>
+<status status="FAIL" starttime="20220901 10:38:36.107" endtime="20220901 10:38:39.734"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20220901 10:38:39.735" endtime="20220901 10:38:39.739"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220901 10:38:39.739" endtime="20220901 10:38:39.739"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.bing.com/</arg>
+<arg>Edge</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="NOT RUN" starttime="20220901 10:38:39.739" endtime="20220901 10:38:39.739"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20220901 10:38:39.746" endtime="20220901 10:38:39.746"/>
+</kw>
+<kw name="Switch Browser" library="SeleniumLibrary">
+<arg>1</arg>
+<doc>Switches between active browsers using ``index_or_alias``.</doc>
+<status status="NOT RUN" starttime="20220901 10:38:39.746" endtime="20220901 10:38:39.746"/>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${Title1}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="NOT RUN" starttime="20220901 10:38:39.746" endtime="20220901 10:38:39.747"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Title1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220901 10:38:39.747" endtime="20220901 10:38:39.747"/>
+</kw>
+<kw name="Switch Browser" library="SeleniumLibrary">
+<arg>2</arg>
+<doc>Switches between active browsers using ``index_or_alias``.</doc>
+<status status="NOT RUN" starttime="20220901 10:38:39.747" endtime="20220901 10:38:39.748"/>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${Title2}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="NOT RUN" starttime="20220901 10:38:39.748" endtime="20220901 10:38:39.748"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Title2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220901 10:38:39.748" endtime="20220901 10:38:39.748"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220901 10:38:39.748" endtime="20220901 10:38:39.749"/>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="NOT RUN" starttime="20220901 10:38:39.749" endtime="20220901 10:38:39.749"/>
+</kw>
+<status status="FAIL" starttime="20220901 10:38:36.106" endtime="20220901 10:38:39.749">WebDriverException: Message: unknown error: Microsoft Edge failed to start: crashed.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.)
+Stacktrace:
+Backtrace:
+	Microsoft::Applications::Events::EventProperties::unpack [0x00007FF7163B6312+24642]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF716309A62+334098]
+	Ordinal0 [0x00007FF715EA7915+620821]
+	Ordinal0 [0x00007FF715ECFC83+785539]
+	Ordinal0 [0x00007FF715ECA9EE+764398]
+	Ordinal0 [0x00007FF715F045FF+1000959]
+	Ordinal0 [0x00007FF715EFECB3+978099]
+	Ordinal0 [0x00007FF715ED5F00+810752]
+	Ordinal0 [0x00007FF715ED7508+816392]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71616D578+135480]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF716154C77+34871]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF716157CFC+47292]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF715FB11B6+23222]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF716310F6B+364059]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF7163159A4+383060]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF716315AFD+383405]
+	Microsoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF71632040E+39918]
+	BaseThreadInitThunk [0x00007FFC2DA554E0+16]
+	RtlUserThreadStart [0x00007FFC2DD8485B+43]
+</status>
+</test>
+<status status="FAIL" starttime="20220901 10:38:35.931" endtime="20220901 10:38:39.749"/>
+</suite>
+<status status="FAIL" starttime="20220901 10:38:35.913" endtime="20220901 10:38:39.749"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="SwitchMultipleBrowser">Suites.SwitchMultipleBrowser</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

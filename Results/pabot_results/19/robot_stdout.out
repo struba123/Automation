@@ -1,0 +1,47 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.SwitchMultipleBrowser                                                  
+==============================================================================
+MultipleBrowseTest                                                      
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Saurabh\PycharmProjects\Automation\TestCases\SwitchMultipleBrowser.robot:7
+    T:  MultipleBrowseTest    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Saurabh\PycharmProjects\Automation\TestCases\SwitchMultipleBrowser.robot:9
+      Open Browser    https://www.google.co.in/    Edge
+______________________________________________________________________________
+| FAIL |
+WebDriverException: Message: unknown error: Microsoft Edge failed to start: crashed.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.)
+Stacktrace:
+Backtrace:
+	Microsoft::Applications::Events::EventProperties::unpack [0x00007FF7163B6312+24642]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF716309A62+334098]
+	Ordinal0 [0x00007FF715EA7915+620821]
+	Ordinal0 [0x00007FF715ECFC83+785539]
+	Ordinal0 [0x00007FF715ECA9EE+764398]
+	Ordinal0 [0x00007FF715F045FF+1000959]
+	Ordinal0 [0x00007FF715EFECB3+978099]
+	Ordinal0 [0x00007FF715ED5F00+810752]
+	Ordinal0 [0x00007FF715ED7508+816392]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71616D578+135480]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF716154C77+34871]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF716157CFC+47292]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF715FB11B6+23222]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF716310F6B+364059]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF7163159A4+383060]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF716315AFD+383405]
+	Microsoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF71632040E+39918]
+	BaseThreadInitThunk [0x00007FFC2DA554E0+16]
+	RtlUserThreadStart [0x00007FFC2DD8485B+43]
+------------------------------------------------------------------------------
+Suites.SwitchMultipleBrowser                                          | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Suites                                                                | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\Saurabh\PycharmProjects\Automation\Results\pabot_results\19\output.xml

@@ -1,0 +1,15 @@
+1662008899607	geckodriver	INFO	Listening on 127.0.0.1:50108
+1662008902650	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50109" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Windows\\SystemTemp\\rust_mozprofileWVdYEb"
+1662008903218	Marionette	INFO	Marionette enabled
+1662008903224	Marionette	INFO	Listening on port 50120
+WebDriver BiDi listening on ws://localhost:50109
+Read port: 50120
+1662008903404	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RcANGLE(no compositor window)
+[GFX1-]: Failed to connect WebRenderBridgeChild. isParent=true
+[GFX1-]: Fallback WR to SW-WR + D3D11
+[GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0
+[GFX1-]: Failed to initialize CompositorD3D11 for SWGL: FEATURE_FAILURE_D3D11_SWAP_CHAIN
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Windows\\SystemTemp\\rust_mozprofileWVdYEb\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:50109/devtools/browser/6617b0f6-6426-4ab8-b276-f00be115e05a
+JavaScript warning: https://pagead2.googlesyndication.com/bg/X5Wcp9Ugq7sZToVDu26YRTjm5OYazRuFrO0o8wz5lEo.js line 2 > eval line 5155 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.

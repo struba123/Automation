@@ -1,0 +1,34 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.SetupandTeardown                                                       
+==============================================================================
+Opening Browser
+TC1 Prepaid recharge                                                  Login To Application
+This is Prepaid Recharge Testcase
+Logout To Application
+| PASS |
+------------------------------------------------------------------------------
+TC2 Postpaid Recharge                                                 Login To Application
+This is Postpaid Recharge Testcase
+Logout To Application
+| PASS |
+------------------------------------------------------------------------------
+TC3 Search                                                            Login To Application
+This is Search Testcase
+Logout To Application
+| PASS |
+------------------------------------------------------------------------------
+TC4 Advanced search                                                   Login To Application
+This is Adv search Testcase
+Logout To Application
+| PASS |
+------------------------------------------------------------------------------
+Closing Browser
+Suites.SetupandTeardown                                               | PASS |
+4 tests, 4 passed, 0 failed
+==============================================================================
+Suites                                                                | PASS |
+4 tests, 4 passed, 0 failed
+==============================================================================
+Output:  C:\Users\Saurabh\PycharmProjects\Automation\Results\pabot_results\17\output.xml

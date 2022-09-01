@@ -1,0 +1,29 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.LoginTest                                                              
+==============================================================================
+LoginTest                                                               
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Saurabh\PycharmProjects\Automation\TestCases\LoginTest.robot:13
+    T:  LoginTest    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Saurabh\PycharmProjects\Automation\TestCases\LoginTest.robot:15
+      Enter Usersname    ${user}
+      |  ${user} = saurabh123 (str)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Saurabh\PycharmProjects\Automation\Resources\LoginKeywords.robot:13
+      Input Text    txt_loginUserName    ${username}
+      |  ${username} = saurabh123 (str)
+______________________________________________________________________________
+| FAIL |
+Element with locator 'txt_loginUserName' not found.
+------------------------------------------------------------------------------
+Suites.LoginTest                                                      | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Suites                                                                | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\Saurabh\PycharmProjects\Automation\pabot_results\11\output.xml

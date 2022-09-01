@@ -1,0 +1,14 @@
+1660842677724	geckodriver	INFO	Listening on 127.0.0.1:50910
+1660842680778	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50911" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Saurabh\\AppData\\Local\\Temp\\rust_mozprofileddB1P6"
+1660842681202	Marionette	INFO	Marionette enabled
+1660842681208	Marionette	INFO	Listening on port 50922
+WebDriver BiDi listening on ws://localhost:50911
+Read port: 50922
+1660842681412	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Saurabh\\AppData\\Local\\Temp\\rust_mozprofileddB1P6\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:50911/devtools/browser/13cd126d-a670-49fd-b194-56d743d91b42
+JavaScript warning: https://pagead2.googlesyndication.com/bg/BcUHUABoavvpRAX3o-C5BfAq8AHsMXRVb9HgeqDHxZ8.js line 2 > eval line 4513 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1660842696517	Marionette	INFO	Stopped listening on port 50922
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1109: Error: Sqlite.jsm has been shutdown. Cannot open connection to: C:\Users\Saurabh\AppData\Local\Temp\rust_mozprofileddB1P6\protections.sqlite

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.6 on win32)" generated="20220823 11:39:54.041" rpa="false" schemaversion="3">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Alert" source="C:\Users\Saurabh\PycharmProjects\Automation\TestCases\Alert.robot">
+<test id="s1-s1-t1" name="HandlingAlerts" line="7">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://the-internet.herokuapp.com/javascript_alerts</arg>
+<arg>Firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220823 11:39:54.375" level="INFO">Opening browser 'Firefox' to base url 'https://the-internet.herokuapp.com/javascript_alerts'.</msg>
+<msg timestamp="20220823 11:39:54.383" level="INFO">Firefox driver log is always forced to to: C:\Users\Saurabh\PycharmProjects\Automation\pabot_results\0\geckodriver-1.log</msg>
+<status status="PASS" starttime="20220823 11:39:54.375" endtime="20220823 11:40:05.168"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="content"]/div/ul/li[2]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 11:40:05.170" level="INFO">Clicking element '//*[@id="content"]/div/ul/li[2]/button'.</msg>
+<status status="PASS" starttime="20220823 11:40:05.169" endtime="20220823 11:40:05.322"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220823 11:40:08.332" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220823 11:40:05.323" endtime="20220823 11:40:08.332"/>
+</kw>
+<kw name="Alert Should Be Present" library="SeleniumLibrary">
+<arg>I am a JS Confirm</arg>
+<doc>Verifies that an alert is present and by default, accepts it.</doc>
+<msg timestamp="20220823 11:40:08.334" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<status status="PASS" starttime="20220823 11:40:08.333" endtime="20220823 11:40:08.358"/>
+</kw>
+<status status="PASS" starttime="20220823 11:39:54.375" endtime="20220823 11:40:08.359"/>
+</test>
+<status status="PASS" starttime="20220823 11:39:54.078" endtime="20220823 11:40:08.361"/>
+</suite>
+<status status="PASS" starttime="20220823 11:39:54.052" endtime="20220823 11:40:08.365"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Alert">Suites.Alert</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

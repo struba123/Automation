@@ -1,0 +1,18 @@
+1660735778092	geckodriver	INFO	Listening on 127.0.0.1:57925
+1660735781170	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "57926" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Saurabh\\AppData\\Local\\Temp\\rust_mozprofileYITSJ8"
+1660735781608	Marionette	INFO	Marionette enabled
+1660735781615	Marionette	INFO	Listening on port 57936
+WebDriver BiDi listening on ws://localhost:57926
+Read port: 57936
+1660735781829	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Saurabh\\AppData\\Local\\Temp\\rust_mozprofileYITSJ8\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:57926/devtools/browser/a8ed8d85-e326-4c7a-81c4-1ed2cd918d68
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 769))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 421))
+1660735816570	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:237:24
+TimedPromise@chrome://remote/content/marionette/sync.js:222:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1660735826394	Marionette	INFO	Stopped listening on port 57936
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.

@@ -1,0 +1,47 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.Tabbedwindows                                                          
+==============================================================================
+TabbedWindowTest                                                        
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Saurabh\PycharmProjects\Automation\TestCases\Tabbedwindows.robot:7
+    T:  TabbedWindowTest    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Saurabh\PycharmProjects\Automation\TestCases\Tabbedwindows.robot:8
+      Open Browser    https://demo.automationtesting.in/Windows.html    Edge
+______________________________________________________________________________
+| FAIL |
+WebDriverException: Message: unknown error: Microsoft Edge failed to start: crashed.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.)
+Stacktrace:
+Backtrace:
+	Microsoft::Applications::Events::EventProperties::unpack [0x00007FF728E36312+24642]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF728D89A62+334098]
+	Ordinal0 [0x00007FF728927915+620821]
+	Ordinal0 [0x00007FF72894FC83+785539]
+	Ordinal0 [0x00007FF72894A9EE+764398]
+	Ordinal0 [0x00007FF7289845FF+1000959]
+	Ordinal0 [0x00007FF72897ECB3+978099]
+	Ordinal0 [0x00007FF728955F00+810752]
+	Ordinal0 [0x00007FF728957508+816392]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF728BED578+135480]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF728BD4C77+34871]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF728BD7CFC+47292]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF728A311B6+23222]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF728D90F6B+364059]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF728D959A4+383060]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF728D95AFD+383405]
+	Microsoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF728DA040E+39918]
+	BaseThreadInitThunk [0x00007FFC2DA554E0+16]
+	RtlUserThreadStart [0x00007FFC2DD8485B+43]
+------------------------------------------------------------------------------
+Suites.Tabbedwindows                                                  | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Suites                                                                | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\Saurabh\PycharmProjects\Automation\Results\pabot_results\21\output.xml

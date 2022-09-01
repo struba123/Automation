@@ -1,0 +1,31 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.Dropdowns                                                              
+==============================================================================
+Handle Dropdown and Lists                                               
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Saurabh\PycharmProjects\Automation\TestCases\Dropdowns.robot:11
+    T:  Handle Dropdown and Lists    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Saurabh\PycharmProjects\Automation\TestCases\Dropdowns.robot:18
+      Select From List By Index    Skills    6
+______________________________________________________________________________
+| FAIL |
+ElementClickInterceptedException: Message: Element <select id="Skills" class="form-control ng-valid ng-dirty ng-valid-parse ng-touched" type="text"> is not clickable at point (621,604) because another element <div class="grippy-host"> obscures it
+Stacktrace:
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:188:5
+ElementClickInterceptedError@chrome://remote/content/shared/webdriver/Errors.jsm:287:5
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:166:11
+interaction.clickElement@chrome://remote/content/marionette/interaction.js:125:11
+clickElement@chrome://remote/content/marionette/actors/MarionetteCommandsChild.jsm:205:29
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.jsm:93:31
+------------------------------------------------------------------------------
+Suites.Dropdowns                                                      | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Suites                                                                | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\Saurabh\PycharmProjects\Automation\pabot_results\5\output.xml

@@ -1,0 +1,17 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.NavigationKeyword                                                      
+==============================================================================
+NavigationalTest                                                      https://www.google.co.in/
+https://www.bing.com/
+https://www.google.co.in/
+| PASS |
+------------------------------------------------------------------------------
+Suites.NavigationKeyword                                              | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Suites                                                                | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Output:  C:\Users\Saurabh\PycharmProjects\Automation\Results\pabot_results\13\output.xml

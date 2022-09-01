@@ -1,0 +1,28 @@
+1662008817880	geckodriver	INFO	Listening on 127.0.0.1:49624
+1662008820950	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "49625" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Windows\\SystemTemp\\rust_mozprofileudKWKF"
+1662008821675	Marionette	INFO	Marionette enabled
+1662008821684	Marionette	INFO	Listening on port 49648
+WebDriver BiDi listening on ws://localhost:49625
+Read port: 49648
+1662008821900	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RcANGLE(no compositor window)
+[GFX1-]: Failed to connect WebRenderBridgeChild. isParent=true
+[GFX1-]: Fallback WR to SW-WR + D3D11
+[GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0
+[GFX1-]: Failed to initialize CompositorD3D11 for SWGL: FEATURE_FAILURE_D3D11_SWAP_CHAIN
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Windows\\SystemTemp\\rust_mozprofileudKWKF\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:49625/devtools/browser/dadbaf1a-f076-4440-8cfc-a22a59d41893
+console.error: services.settings: 
+  main/query-stripping Signature failed  InvalidSignatureError: Invalid content signature (main/query-stripping)
+console.error: services.settings: 
+  main/query-stripping local data was corrupted
+console.warn: services.settings: main/query-stripping Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/query-stripping Signature failed again InvalidSignatureError: Invalid content signature (main/query-stripping)
+JavaScript warning: https://secure-ds.serving-sys.com/BurstingCachedScripts//Ad_2_221_3_0/ebStdBannerEx.js, line 140: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/X5Wcp9Ugq7sZToVDu26YRTjm5OYazRuFrO0o8wz5lEo.js line 2 > eval line 7545 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+1662008972620	Marionette	INFO	Stopped listening on port 49648
+[Parent 16456, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+!!! error running onStopped callback: TypeError: callback is not a function
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1108: Error: Sqlite.jsm has been shutdown. Cannot open connection to: C:\Windows\SystemTemp\rust_mozprofileudKWKF\protections.sqlite

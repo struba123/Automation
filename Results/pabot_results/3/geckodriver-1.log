@@ -1,0 +1,27 @@
+1662008791905	geckodriver	INFO	Listening on 127.0.0.1:49483
+1662008794987	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "49484" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Windows\\SystemTemp\\rust_mozprofileBX1a4J"
+1662008795790	Marionette	INFO	Marionette enabled
+1662008795801	Marionette	INFO	Listening on port 49516
+WebDriver BiDi listening on ws://localhost:49484
+Read port: 49516
+1662008795979	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RcANGLE(no compositor window)
+[GFX1-]: Failed to connect WebRenderBridgeChild. isParent=true
+[GFX1-]: Fallback WR to SW-WR + D3D11
+[GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0
+[GFX1-]: Failed to initialize CompositorD3D11 for SWGL: FEATURE_FAILURE_D3D11_SWAP_CHAIN
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Windows\\SystemTemp\\rust_mozprofileBX1a4J\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:49484/devtools/browser/b2a63fc3-cb6c-4257-a046-e44e10a7d875
+console.error: services.settings: 
+  main/query-stripping Signature failed  InvalidSignatureError: Invalid content signature (main/query-stripping)
+console.error: services.settings: 
+  main/query-stripping local data was corrupted
+console.warn: services.settings: main/query-stripping Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/query-stripping Signature failed again InvalidSignatureError: Invalid content signature (main/query-stripping)
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://admin-demo.nopcommerce.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://admin-demo.nopcommerce.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://admin-demo.nopcommerce.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://admin-demo.nopcommerce.com."
+1662008804727	Marionette	INFO	Stopped listening on port 49516
+JavaScript error: https://admin-demo.nopcommerce.com/lib_npm/jquery/jquery.min.js?v=meexYto0mAKr6PjyeE37ROc-We8, line 2: NS_ERROR_NOT_INITIALIZED: 

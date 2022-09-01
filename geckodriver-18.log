@@ -1,0 +1,15 @@
+1660734774770	geckodriver	INFO	Listening on 127.0.0.1:57259
+1660734777828	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "57260" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Saurabh\\AppData\\Local\\Temp\\rust_mozprofileYCqfrG"
+1660734778305	Marionette	INFO	Marionette enabled
+1660734778312	Marionette	INFO	Listening on port 57270
+WebDriver BiDi listening on ws://localhost:57260
+Read port: 57270
+1660734778516	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Saurabh\\AppData\\Local\\Temp\\rust_mozprofileYCqfrG\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:57260/devtools/browser/ba6ce7e3-d18a-452b-b8b2-1c45e9bbad8e
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 769))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 421))
+JavaScript warning: http://demowebshop.tricentis.com/Scripts/jquery-1.10.2.min.js, line 19: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+console.error: services.settings: 
+  main/query-stripping Signature failed  TypeError: NetworkError: Network request failed
+1660734858114	Marionette	INFO	Stopped listening on port 57270

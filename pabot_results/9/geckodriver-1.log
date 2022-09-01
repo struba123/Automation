@@ -1,0 +1,12 @@
+1661235058194	geckodriver	INFO	Listening on 127.0.0.1:54321
+1661235061255	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54322" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Saurabh\\AppData\\Local\\Temp\\rust_mozprofilemR9l0a"
+1661235061694	Marionette	INFO	Marionette enabled
+1661235061700	Marionette	INFO	Listening on port 54331
+WebDriver BiDi listening on ws://localhost:54322
+Read port: 54331
+1661235061850	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Saurabh\\AppData\\Local\\Temp\\rust_mozprofilemR9l0a\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:54322/devtools/browser/c0fd610c-387c-417c-ac65-29e3e95e4e4c
+JavaScript warning: http://demowebshop.tricentis.com/Scripts/jquery-1.10.2.min.js, line 19: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1661235247462	Marionette	INFO	Stopped listening on port 54331
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.

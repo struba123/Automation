@@ -1,0 +1,32 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.Dropdowns                                                              
+==============================================================================
+Handle Dropdown and Lists                                               
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Saurabh\PycharmProjects\Automation\TestCases\Dropdowns.robot:11
+    T:  Handle Dropdown and Lists    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Saurabh\PycharmProjects\Automation\TestCases\Dropdowns.robot:16
+      Select From List By Label    Skills    CSS
+______________________________________________________________________________
+| FAIL |
+ElementClickInterceptedException: Message: Element <select id="Skills" class="form-control ng-pristine ng-untouched ng-valid" type="text"> is not clickable at point (390,618) because another element <iframe id="aswift_3" name="aswift_3" src="https://googleads.g.doubleclick.net/pagead/html/r20220829/r20110914/zrt_lookup.html?fsb=1#RS-1-&adk=1812271801&client=ca-pub-9173866185064071&fa=1&ifi=4&uci=a!4&btvi=1&xpc=UW2HuMMsgh&p=https%3A//demo.automationtesting.in"> obscures it
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.jsm:12:1
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:192:5
+ElementClickInterceptedError@chrome://remote/content/shared/webdriver/Errors.jsm:291:5
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:166:11
+interaction.clickElement@chrome://remote/content/marionette/interaction.js:125:11
+clickElement@chrome://remote/content/marionette/actors/MarionetteCommandsChild.jsm:204:29
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.jsm:92:31
+------------------------------------------------------------------------------
+Suites.Dropdowns                                                      | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Suites                                                                | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\Saurabh\PycharmProjects\Automation\Results\pabot_results\5\output.xml

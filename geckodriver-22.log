@@ -1,0 +1,13 @@
+1660735727405	geckodriver	INFO	Listening on 127.0.0.1:57882
+1660735730472	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "57883" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Saurabh\\AppData\\Local\\Temp\\rust_mozprofilec3UWWm"
+1660735730945	Marionette	INFO	Marionette enabled
+1660735730951	Marionette	INFO	Listening on port 57893
+WebDriver BiDi listening on ws://localhost:57883
+Read port: 57893
+1660735731156	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Saurabh\\AppData\\Local\\Temp\\rust_mozprofilec3UWWm\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:57883/devtools/browser/23c17505-a2c8-4e92-9e02-2469074f9a7e
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 769))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 421))
+1660735771018	Marionette	INFO	Stopped listening on port 57893
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.

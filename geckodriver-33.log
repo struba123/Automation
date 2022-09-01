@@ -1,0 +1,17 @@
+1660748995436	geckodriver	INFO	Listening on 127.0.0.1:63165
+1660748998497	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63166" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Saurabh\\AppData\\Local\\Temp\\rust_mozprofile4ZuRwl"
+1660748998973	Marionette	INFO	Marionette enabled
+1660748998980	Marionette	INFO	Listening on port 63175
+WebDriver BiDi listening on ws://localhost:63166
+Read port: 63175
+1660748999207	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Saurabh\\AppData\\Local\\Temp\\rust_mozprofile4ZuRwl\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:63166/devtools/browser/5b5151cd-a4e1-4ba0-a9c9-51a91356d78b
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.microsoftonline.com"
+1660749003995	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://assets.msn.com/bundles/v1/bingHomepage/latest/weather-card.5af06345cb2ad2f2729c.js, line 5087: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.microsoftonline.com"
+1660749006650	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+Shutting down due to socket process crash.
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+JavaScript error: chrome://global/content/elements/browser-custom-element.js, line 1627: Error: permitUnload is already running for this tab.

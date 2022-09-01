@@ -1,0 +1,22 @@
+1662008775532	geckodriver	INFO	Listening on 127.0.0.1:49379
+1662008778625	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "49380" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Windows\\SystemTemp\\rust_mozprofilelhHOCt"
+1662008779782	Marionette	INFO	Marionette enabled
+1662008779792	Marionette	INFO	Listening on port 49406
+WebDriver BiDi listening on ws://localhost:49380
+Read port: 49406
+1662008780243	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RcANGLE(no compositor window)
+[GFX1-]: Failed to connect WebRenderBridgeChild. isParent=true
+[GFX1-]: Fallback WR to SW-WR + D3D11
+[GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0
+[GFX1-]: Failed to initialize CompositorD3D11 for SWGL: FEATURE_FAILURE_D3D11_SWAP_CHAIN
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Windows\\SystemTemp\\rust_mozprofilelhHOCt\\search.json.mozlz4", (void 0)))
+console.error: services.settings: 
+  main/query-stripping Signature failed  InvalidSignatureError: Invalid content signature (main/query-stripping)
+console.error: services.settings: 
+  main/query-stripping local data was corrupted
+console.warn: services.settings: main/query-stripping Signature verified failed. Retry from scratch
+DevTools listening on ws://localhost:49380/devtools/browser/ef9c2234-f717-4741-abc7-f8d394327ab7
+console.error: services.settings: 
+  main/query-stripping Signature failed again InvalidSignatureError: Invalid content signature (main/query-stripping)
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iX3c4/yw/l/en_GB/G79S4wpQ6hy.js?_nc_x=Ij3Wp8lg5Kz, line 21: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.

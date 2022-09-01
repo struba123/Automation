@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.6 on win32)" generated="20220901 10:36:25.543" rpa="false" schemaversion="3">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="CloseAll" source="C:\Users\Saurabh\PycharmProjects\Automation\TestCases\CloseAll.robot">
+<test id="s1-s1-t1" name="MyTestCase" line="6">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://demowebshop.tricentis.com/register</arg>
+<arg>Firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220901 10:36:25.909" level="INFO">Opening browser 'Firefox' to base url 'http://demowebshop.tricentis.com/register'.</msg>
+<msg timestamp="20220901 10:36:25.912" level="INFO">Firefox driver log is always forced to to: C:\Users\Saurabh\PycharmProjects\Automation\Results\pabot_results\2\geckodriver-1.log</msg>
+<status status="PASS" starttime="20220901 10:36:25.909" endtime="20220901 10:36:35.366"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220901 10:36:35.366" endtime="20220901 10:36:35.369"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://automationpractice.com/index.php</arg>
+<arg>Firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220901 10:36:35.370" level="INFO">Opening browser 'Firefox' to base url 'http://automationpractice.com/index.php'.</msg>
+<msg timestamp="20220901 10:36:35.371" level="INFO">Firefox driver log is always forced to to: C:\Users\Saurabh\PycharmProjects\Automation\Results\pabot_results\2\geckodriver-2.log</msg>
+<status status="PASS" starttime="20220901 10:36:35.369" endtime="20220901 10:36:58.964"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220901 10:36:58.964" endtime="20220901 10:36:58.976"/>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220901 10:36:58.977" endtime="20220901 10:37:01.676"/>
+</kw>
+<status status="PASS" starttime="20220901 10:36:25.908" endtime="20220901 10:37:01.677"/>
+</test>
+<status status="PASS" starttime="20220901 10:36:25.585" endtime="20220901 10:37:01.678"/>
+</suite>
+<status status="PASS" starttime="20220901 10:36:25.560" endtime="20220901 10:37:01.687"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="CloseAll">Suites.CloseAll</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.6 on win32)" generated="20220901 10:38:49.645" rpa="false" schemaversion="3">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Tabbedwindows" source="C:\Users\Saurabh\PycharmProjects\Automation\TestCases\Tabbedwindows.robot">
+<test id="s1-s1-t1" name="TabbedWindowTest" line="7">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://demo.automationtesting.in/Windows.html</arg>
+<arg>Edge</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220901 10:38:49.881" level="INFO">Opening browser 'Edge' to base url 'https://demo.automationtesting.in/Windows.html'.</msg>
+<msg timestamp="20220901 10:38:54.004" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20220901 10:38:54.004" level="FAIL">WebDriverException: Message: unknown error: Microsoft Edge failed to start: crashed.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.)
+Stacktrace:
+Backtrace:
+	Microsoft::Applications::Events::EventProperties::unpack [0x00007FF728E36312+24642]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF728D89A62+334098]
+	Ordinal0 [0x00007FF728927915+620821]
+	Ordinal0 [0x00007FF72894FC83+785539]
+	Ordinal0 [0x00007FF72894A9EE+764398]
+	Ordinal0 [0x00007FF7289845FF+1000959]
+	Ordinal0 [0x00007FF72897ECB3+978099]
+	Ordinal0 [0x00007FF728955F00+810752]
+	Ordinal0 [0x00007FF728957508+816392]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF728BED578+135480]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF728BD4C77+34871]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF728BD7CFC+47292]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF728A311B6+23222]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF728D90F6B+364059]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF728D959A4+383060]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF728D95AFD+383405]
+	Microsoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF728DA040E+39918]
+	BaseThreadInitThunk [0x00007FFC2DA554E0+16]
+	RtlUserThreadStart [0x00007FFC2DD8485B+43]
+</msg>
+<status status="FAIL" starttime="20220901 10:38:49.881" endtime="20220901 10:38:54.028"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="Tabbed"]/a/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220901 10:38:54.028" endtime="20220901 10:38:54.028"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>title=Sakinalium | Home</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="NOT RUN" starttime="20220901 10:38:54.028" endtime="20220901 10:38:54.028"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="main_navbar"]/ul/li[4]/a/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220901 10:38:54.028" endtime="20220901 10:38:54.028"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220901 10:38:54.028" endtime="20220901 10:38:54.028"/>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="NOT RUN" starttime="20220901 10:38:54.028" endtime="20220901 10:38:54.028"/>
+</kw>
+<status status="FAIL" starttime="20220901 10:38:49.881" endtime="20220901 10:38:54.028">WebDriverException: Message: unknown error: Microsoft Edge failed to start: crashed.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.)
+Stacktrace:
+Backtrace:
+	Microsoft::Applications::Events::EventProperties::unpack [0x00007FF728E36312+24642]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF728D89A62+334098]
+	Ordinal0 [0x00007FF728927915+620821]
+	Ordinal0 [0x00007FF72894FC83+785539]
+	Ordinal0 [0x00007FF72894A9EE+764398]
+	Ordinal0 [0x00007FF7289845FF+1000959]
+	Ordinal0 [0x00007FF72897ECB3+978099]
+	Ordinal0 [0x00007FF728955F00+810752]
+	Ordinal0 [0x00007FF728957508+816392]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF728BED578+135480]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF728BD4C77+34871]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF728BD7CFC+47292]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF728A311B6+23222]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF728D90F6B+364059]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF728D959A4+383060]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF728D95AFD+383405]
+	Microsoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF728DA040E+39918]
+	BaseThreadInitThunk [0x00007FFC2DA554E0+16]
+	RtlUserThreadStart [0x00007FFC2DD8485B+43]
+</status>
+</test>
+<status status="FAIL" starttime="20220901 10:38:49.668" endtime="20220901 10:38:54.036"/>
+</suite>
+<status status="FAIL" starttime="20220901 10:38:49.654" endtime="20220901 10:38:54.036"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Tabbedwindows">Suites.Tabbedwindows</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

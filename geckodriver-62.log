@@ -1,0 +1,12 @@
+1660909468499	geckodriver	INFO	Listening on 127.0.0.1:50455
+1660909471553	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50456" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Saurabh\\AppData\\Local\\Temp\\rust_mozprofileE9gQ1j"
+1660909472181	Marionette	INFO	Marionette enabled
+1660909472189	Marionette	INFO	Listening on port 50467
+WebDriver BiDi listening on ws://localhost:50456
+Read port: 50467
+1660909472402	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Saurabh\\AppData\\Local\\Temp\\rust_mozprofileE9gQ1j\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:50456/devtools/browser/f20d5045-a358-431a-972d-f1e2cd5c7e1d
+1660909494435	Marionette	INFO	Stopped listening on port 50467
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 720: Error: Phase "Sqlite.jsm: wait until all connections are closed" is finished, it is too late to register completion condition "protections.sqlite#0: waiting for shutdown"

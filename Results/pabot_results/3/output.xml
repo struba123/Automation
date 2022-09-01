@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.6 on win32)" generated="20220901 10:36:31.322" rpa="false" schemaversion="3">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="DDT1" source="C:\Users\Saurabh\PycharmProjects\Automation\TestCases\DDT1.robot">
+<kw name="Open My Browser" library="Login_Resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220901 10:36:31.793" level="INFO">Opening browser 'Firefox' to base url 'https://admin-demo.nopcommerce.com/login?returnurl=%2Fadmin%2F'.</msg>
+<msg timestamp="20220901 10:36:31.795" level="INFO">Firefox driver log is always forced to to: C:\Users\Saurabh\PycharmProjects\Automation\Results\pabot_results\3\geckodriver-1.log</msg>
+<status status="PASS" starttime="20220901 10:36:31.793" endtime="20220901 10:36:39.404"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220901 10:36:39.404" endtime="20220901 10:36:39.409"/>
+</kw>
+<status status="PASS" starttime="20220901 10:36:31.792" endtime="20220901 10:36:39.409"/>
+</kw>
+<test id="s1-s1-t1" name="Right user empty pass" line="10">
+<kw name="Invalid login">
+<arg>admin@yourstore.com</arg>
+<arg>${EMPTY}</arg>
+<kw name="Input Username" library="Login_Resources">
+<arg>${username}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Email</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220901 10:36:39.414" level="INFO">Typing text 'admin@yourstore.com' into text field 'id:Email'.</msg>
+<status status="PASS" starttime="20220901 10:36:39.414" endtime="20220901 10:36:39.508"/>
+</kw>
+<status status="PASS" starttime="20220901 10:36:39.413" endtime="20220901 10:36:39.508"/>
+</kw>
+<kw name="Input Pwd" library="Login_Resources">
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Password</arg>
+<arg>${Password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220901 10:36:39.510" level="INFO">Typing text '' into text field 'id:Password'.</msg>
+<status status="PASS" starttime="20220901 10:36:39.509" endtime="20220901 10:36:39.551"/>
+</kw>
+<status status="PASS" starttime="20220901 10:36:39.508" endtime="20220901 10:36:39.552"/>
+</kw>
+<kw name="Click Login Button" library="Login_Resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[normalize-space()='Log in']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220901 10:36:39.554" level="INFO">Clicking element '//button[normalize-space()='Log in']'.</msg>
+<status status="PASS" starttime="20220901 10:36:39.553" endtime="20220901 10:36:41.029"/>
+</kw>
+<status status="PASS" starttime="20220901 10:36:39.552" endtime="20220901 10:36:41.029"/>
+</kw>
+<kw name="Error Message should be visible" library="Login_Resources">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Login was unsuccessful</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220901 10:36:41.061" level="INFO">Current page contains text 'Login was unsuccessful'.</msg>
+<status status="PASS" starttime="20220901 10:36:41.030" endtime="20220901 10:36:41.061"/>
+</kw>
+<status status="PASS" starttime="20220901 10:36:41.029" endtime="20220901 10:36:41.062"/>
+</kw>
+<status status="PASS" starttime="20220901 10:36:39.411" endtime="20220901 10:36:41.062"/>
+</kw>
+<status status="PASS" starttime="20220901 10:36:39.410" endtime="20220901 10:36:41.062"/>
+</test>
+<test id="s1-s1-t2" name="Right user wrong pass" line="11">
+<kw name="Invalid login">
+<arg>admin@yourstore.com</arg>
+<arg>xyz</arg>
+<kw name="Input Username" library="Login_Resources">
+<arg>${username}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Email</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220901 10:36:41.066" level="INFO">Typing text 'admin@yourstore.com' into text field 'id:Email'.</msg>
+<status status="PASS" starttime="20220901 10:36:41.066" endtime="20220901 10:36:41.118"/>
+</kw>
+<status status="PASS" starttime="20220901 10:36:41.065" endtime="20220901 10:36:41.118"/>
+</kw>
+<kw name="Input Pwd" library="Login_Resources">
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Password</arg>
+<arg>${Password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220901 10:36:41.121" level="INFO">Typing text 'xyz' into text field 'id:Password'.</msg>
+<status status="PASS" starttime="20220901 10:36:41.120" endtime="20220901 10:36:41.149"/>
+</kw>
+<status status="PASS" starttime="20220901 10:36:41.118" endtime="20220901 10:36:41.149"/>
+</kw>
+<kw name="Click Login Button" library="Login_Resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[normalize-space()='Log in']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220901 10:36:41.151" level="INFO">Clicking element '//button[normalize-space()='Log in']'.</msg>
+<status status="PASS" starttime="20220901 10:36:41.150" endtime="20220901 10:36:41.719"/>
+</kw>
+<status status="PASS" starttime="20220901 10:36:41.150" endtime="20220901 10:36:41.720"/>
+</kw>
+<kw name="Error Message should be visible" library="Login_Resources">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Login was unsuccessful</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220901 10:36:41.744" level="INFO">Current page contains text 'Login was unsuccessful'.</msg>
+<status status="PASS" starttime="20220901 10:36:41.722" endtime="20220901 10:36:41.744"/>
+</kw>
+<status status="PASS" starttime="20220901 10:36:41.720" endtime="20220901 10:36:41.744"/>
+</kw>
+<status status="PASS" starttime="20220901 10:36:41.062" endtime="20220901 10:36:41.744"/>
+</kw>
+<status status="PASS" starttime="20220901 10:36:41.062" endtime="20220901 10:36:41.744"/>
+</test>
+<test id="s1-s1-t3" name="Wrong user right pass" line="12">
+<kw name="Invalid login">
+<arg>admin@yourstore.com</arg>
+<arg>admin</arg>
+<kw name="Input Username" library="Login_Resources">
+<arg>${username}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Email</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220901 10:36:41.745" level="INFO">Typing text 'admin@yourstore.com' into text field 'id:Email'.</msg>
+<status status="PASS" starttime="20220901 10:36:41.745" endtime="20220901 10:36:41.811"/>
+</kw>
+<status status="PASS" starttime="20220901 10:36:41.745" endtime="20220901 10:36:41.811"/>
+</kw>
+<kw name="Input Pwd" library="Login_Resources">
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Password</arg>
+<arg>${Password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220901 10:36:41.812" level="INFO">Typing text 'admin' into text field 'id:Password'.</msg>
+<status status="PASS" starttime="20220901 10:36:41.811" endtime="20220901 10:36:41.843"/>
+</kw>
+<status status="PASS" starttime="20220901 10:36:41.811" endtime="20220901 10:36:41.844"/>
+</kw>
+<kw name="Click Login Button" library="Login_Resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[normalize-space()='Log in']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220901 10:36:41.845" level="INFO">Clicking element '//button[normalize-space()='Log in']'.</msg>
+<status status="PASS" starttime="20220901 10:36:41.845" endtime="20220901 10:36:44.190"/>
+</kw>
+<status status="PASS" starttime="20220901 10:36:41.844" endtime="20220901 10:36:44.191"/>
+</kw>
+<kw name="Error Message should be visible" library="Login_Resources">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Login was unsuccessful</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220901 10:36:44.535" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220901 10:36:44.535" level="FAIL">Page should have contained text 'Login was unsuccessful' but did not.</msg>
+<status status="FAIL" starttime="20220901 10:36:44.192" endtime="20220901 10:36:44.540"/>
+</kw>
+<status status="FAIL" starttime="20220901 10:36:44.191" endtime="20220901 10:36:44.541"/>
+</kw>
+<status status="FAIL" starttime="20220901 10:36:41.745" endtime="20220901 10:36:44.541"/>
+</kw>
+<status status="FAIL" starttime="20220901 10:36:41.745" endtime="20220901 10:36:44.542">Page should have contained text 'Login was unsuccessful' but did not.</status>
+</test>
+<test id="s1-s1-t4" name="Wrong user empty pass" line="13">
+<kw name="Invalid login">
+<arg>admin@yourstore.com</arg>
+<arg>${empty}</arg>
+<kw name="Input Username" library="Login_Resources">
+<arg>${username}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Email</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220901 10:36:44.545" level="INFO">Typing text 'admin@yourstore.com' into text field 'id:Email'.</msg>
+<msg timestamp="20220901 10:36:44.610" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220901 10:36:44.611" level="FAIL">Element with locator 'id:Email' not found.</msg>
+<status status="FAIL" starttime="20220901 10:36:44.545" endtime="20220901 10:36:44.614"/>
+</kw>
+<status status="FAIL" starttime="20220901 10:36:44.545" endtime="20220901 10:36:44.615"/>
+</kw>
+<kw name="Input Pwd" library="Login_Resources">
+<arg>${password}</arg>
+<status status="NOT RUN" starttime="20220901 10:36:44.615" endtime="20220901 10:36:44.615"/>
+</kw>
+<kw name="Click Login Button" library="Login_Resources">
+<status status="NOT RUN" starttime="20220901 10:36:44.615" endtime="20220901 10:36:44.615"/>
+</kw>
+<kw name="Error Message should be visible" library="Login_Resources">
+<status status="NOT RUN" starttime="20220901 10:36:44.615" endtime="20220901 10:36:44.615"/>
+</kw>
+<status status="FAIL" starttime="20220901 10:36:44.544" endtime="20220901 10:36:44.615"/>
+</kw>
+<status status="FAIL" starttime="20220901 10:36:44.543" endtime="20220901 10:36:44.615">Element with locator 'id:Email' not found.</status>
+</test>
+<test id="s1-s1-t5" name="Wrong user wrong pass" line="14">
+<kw name="Invalid login">
+<arg>admin@yourstore.com</arg>
+<arg>xyz</arg>
+<kw name="Input Username" library="Login_Resources">
+<arg>${username}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Email</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220901 10:36:44.615" level="INFO">Typing text 'admin@yourstore.com' into text field 'id:Email'.</msg>
+<msg timestamp="20220901 10:36:44.713" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220901 10:36:44.713" level="FAIL">Element with locator 'id:Email' not found.</msg>
+<status status="FAIL" starttime="20220901 10:36:44.615" endtime="20220901 10:36:44.713"/>
+</kw>
+<status status="FAIL" starttime="20220901 10:36:44.615" endtime="20220901 10:36:44.713"/>
+</kw>
+<kw name="Input Pwd" library="Login_Resources">
+<arg>${password}</arg>
+<status status="NOT RUN" starttime="20220901 10:36:44.713" endtime="20220901 10:36:44.713"/>
+</kw>
+<kw name="Click Login Button" library="Login_Resources">
+<status status="NOT RUN" starttime="20220901 10:36:44.713" endtime="20220901 10:36:44.713"/>
+</kw>
+<kw name="Error Message should be visible" library="Login_Resources">
+<status status="NOT RUN" starttime="20220901 10:36:44.713" endtime="20220901 10:36:44.713"/>
+</kw>
+<status status="FAIL" starttime="20220901 10:36:44.615" endtime="20220901 10:36:44.713"/>
+</kw>
+<status status="FAIL" starttime="20220901 10:36:44.615" endtime="20220901 10:36:44.721">Element with locator 'id:Email' not found.</status>
+</test>
+<kw name="Close Browsers" library="Login_Resources" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220901 10:36:44.724" endtime="20220901 10:36:45.996"/>
+</kw>
+<status status="PASS" starttime="20220901 10:36:44.723" endtime="20220901 10:36:45.996"/>
+</kw>
+<status status="FAIL" starttime="20220901 10:36:31.358" endtime="20220901 10:36:45.996"/>
+</suite>
+<status status="FAIL" starttime="20220901 10:36:31.332" endtime="20220901 10:36:45.997"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="3" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="2" fail="3" skip="0" id="s1-s1" name="DDT1">Suites.DDT1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

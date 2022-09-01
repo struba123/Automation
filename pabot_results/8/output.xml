@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.6 on win32)" generated="20220823 11:40:48.687" rpa="false" schemaversion="3">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="GetallLinks" source="C:\Users\Saurabh\PycharmProjects\Automation\TestCases\GetallLinks.robot">
+<test id="s1-s1-t1" name="GetAllLinkTest" line="6">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://demo.guru99.com/selenium/newtours/</arg>
+<arg>Firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220823 11:40:48.993" level="INFO">Opening browser 'Firefox' to base url 'https://demo.guru99.com/selenium/newtours/'.</msg>
+<msg timestamp="20220823 11:40:48.994" level="INFO">Firefox driver log is always forced to to: C:\Users\Saurabh\PycharmProjects\Automation\pabot_results\8\geckodriver-1.log</msg>
+<status status="PASS" starttime="20220823 11:40:48.992" endtime="20220823 11:40:56.716"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220823 11:40:56.716" endtime="20220823 11:40:57.004"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${AllLinksCount}</var>
+<arg>//a</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220823 11:40:57.043" level="INFO">${AllLinksCount} = 16</msg>
+<status status="PASS" starttime="20220823 11:40:57.004" endtime="20220823 11:40:57.044"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${AllLinksCount}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220823 11:40:57.044" endtime="20220823 11:40:57.046"/>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<var>@{Linkitems}</var>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20220823 11:40:57.047" level="INFO">@{Linkitems} = [ ]</msg>
+<status status="PASS" starttime="20220823 11:40:57.046" endtime="20220823 11:40:57.047"/>
+</kw>
+<for flavor="IN RANGE">
+<var>${i}</var>
+<value>1</value>
+<value>${AllLinksCount}+1</value>
+<iter>
+<var name="${i}">1</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Linktext}</var>
+<arg>(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220823 11:40:57.071" level="INFO">${Linktext} = Home</msg>
+<status status="PASS" starttime="20220823 11:40:57.049" endtime="20220823 11:40:57.071"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Linktext}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220823 11:40:57.071" endtime="20220823 11:40:57.071"/>
+</kw>
+<status status="PASS" starttime="20220823 11:40:57.048" endtime="20220823 11:40:57.071"/>
+</iter>
+<iter>
+<var name="${i}">2</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Linktext}</var>
+<arg>(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220823 11:40:57.082" level="INFO">${Linktext} = Flights</msg>
+<status status="PASS" starttime="20220823 11:40:57.072" endtime="20220823 11:40:57.082"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Linktext}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220823 11:40:57.082" endtime="20220823 11:40:57.083"/>
+</kw>
+<status status="PASS" starttime="20220823 11:40:57.072" endtime="20220823 11:40:57.083"/>
+</iter>
+<iter>
+<var name="${i}">3</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Linktext}</var>
+<arg>(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220823 11:40:57.091" level="INFO">${Linktext} = Hotels</msg>
+<status status="PASS" starttime="20220823 11:40:57.083" endtime="20220823 11:40:57.091"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Linktext}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220823 11:40:57.091" endtime="20220823 11:40:57.092"/>
+</kw>
+<status status="PASS" starttime="20220823 11:40:57.083" endtime="20220823 11:40:57.092"/>
+</iter>
+<iter>
+<var name="${i}">4</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Linktext}</var>
+<arg>(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220823 11:40:57.100" level="INFO">${Linktext} = Car Rentals</msg>
+<status status="PASS" starttime="20220823 11:40:57.092" endtime="20220823 11:40:57.100"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Linktext}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220823 11:40:57.100" endtime="20220823 11:40:57.101"/>
+</kw>
+<status status="PASS" starttime="20220823 11:40:57.092" endtime="20220823 11:40:57.101"/>
+</iter>
+<iter>
+<var name="${i}">5</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Linktext}</var>
+<arg>(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220823 11:40:57.110" level="INFO">${Linktext} = Cruises</msg>
+<status status="PASS" starttime="20220823 11:40:57.101" endtime="20220823 11:40:57.110"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Linktext}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220823 11:40:57.110" endtime="20220823 11:40:57.110"/>
+</kw>
+<status status="PASS" starttime="20220823 11:40:57.101" endtime="20220823 11:40:57.110"/>
+</iter>
+<iter>
+<var name="${i}">6</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Linktext}</var>
+<arg>(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220823 11:40:57.117" level="INFO">${Linktext} = Destinations</msg>
+<status status="PASS" starttime="20220823 11:40:57.110" endtime="20220823 11:40:57.117"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Linktext}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220823 11:40:57.117" endtime="20220823 11:40:57.117"/>
+</kw>
+<status status="PASS" starttime="20220823 11:40:57.110" endtime="20220823 11:40:57.117"/>
+</iter>
+<iter>
+<var name="${i}">7</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Linktext}</var>
+<arg>(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220823 11:40:57.125" level="INFO">${Linktext} = Vacations</msg>
+<status status="PASS" starttime="20220823 11:40:57.117" endtime="20220823 11:40:57.125"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Linktext}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220823 11:40:57.126" endtime="20220823 11:40:57.126"/>
+</kw>
+<status status="PASS" starttime="20220823 11:40:57.117" endtime="20220823 11:40:57.127"/>
+</iter>
+<iter>
+<var name="${i}">8</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Linktext}</var>
+<arg>(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220823 11:40:57.133" level="INFO">${Linktext} = SIGN-ON</msg>
+<status status="PASS" starttime="20220823 11:40:57.127" endtime="20220823 11:40:57.133"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Linktext}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220823 11:40:57.133" endtime="20220823 11:40:57.133"/>
+</kw>
+<status status="PASS" starttime="20220823 11:40:57.127" endtime="20220823 11:40:57.133"/>
+</iter>
+<iter>
+<var name="${i}">9</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Linktext}</var>
+<arg>(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220823 11:40:57.141" level="INFO">${Linktext} = REGISTER</msg>
+<status status="PASS" starttime="20220823 11:40:57.133" endtime="20220823 11:40:57.141"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Linktext}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220823 11:40:57.141" endtime="20220823 11:40:57.142"/>
+</kw>
+<status status="PASS" starttime="20220823 11:40:57.133" endtime="20220823 11:40:57.142"/>
+</iter>
+<iter>
+<var name="${i}">10</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Linktext}</var>
+<arg>(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220823 11:40:57.148" level="INFO">${Linktext} = SUPPORT</msg>
+<status status="PASS" starttime="20220823 11:40:57.142" endtime="20220823 11:40:57.148"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Linktext}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220823 11:40:57.149" endtime="20220823 11:40:57.149"/>
+</kw>
+<status status="PASS" starttime="20220823 11:40:57.142" endtime="20220823 11:40:57.149"/>
+</iter>
+<iter>
+<var name="${i}">11</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Linktext}</var>
+<arg>(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220823 11:40:57.156" level="INFO">${Linktext} = CONTACT</msg>
+<status status="PASS" starttime="20220823 11:40:57.149" endtime="20220823 11:40:57.156"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Linktext}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220823 11:40:57.156" endtime="20220823 11:40:57.157"/>
+</kw>
+<status status="PASS" starttime="20220823 11:40:57.149" endtime="20220823 11:40:57.157"/>
+</iter>
+<iter>
+<var name="${i}">12</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Linktext}</var>
+<arg>(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220823 11:40:57.164" level="INFO">${Linktext} = your destination</msg>
+<status status="PASS" starttime="20220823 11:40:57.157" endtime="20220823 11:40:57.164"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Linktext}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220823 11:40:57.165" endtime="20220823 11:40:57.165"/>
+</kw>
+<status status="PASS" starttime="20220823 11:40:57.157" endtime="20220823 11:40:57.165"/>
+</iter>
+<iter>
+<var name="${i}">13</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Linktext}</var>
+<arg>(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220823 11:40:57.174" level="INFO">${Linktext} = featured vacation destinations</msg>
+<status status="PASS" starttime="20220823 11:40:57.165" endtime="20220823 11:40:57.174"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Linktext}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220823 11:40:57.174" endtime="20220823 11:40:57.175"/>
+</kw>
+<status status="PASS" starttime="20220823 11:40:57.165" endtime="20220823 11:40:57.175"/>
+</iter>
+<iter>
+<var name="${i}">14</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Linktext}</var>
+<arg>(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220823 11:40:57.182" level="INFO">${Linktext} = Register here</msg>
+<status status="PASS" starttime="20220823 11:40:57.175" endtime="20220823 11:40:57.182"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Linktext}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220823 11:40:57.182" endtime="20220823 11:40:57.183"/>
+</kw>
+<status status="PASS" starttime="20220823 11:40:57.175" endtime="20220823 11:40:57.183"/>
+</iter>
+<iter>
+<var name="${i}">15</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Linktext}</var>
+<arg>(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220823 11:40:57.190" level="INFO">${Linktext} = Business Travel @ About.com</msg>
+<status status="PASS" starttime="20220823 11:40:57.183" endtime="20220823 11:40:57.190"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Linktext}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220823 11:40:57.190" endtime="20220823 11:40:57.190"/>
+</kw>
+<status status="PASS" starttime="20220823 11:40:57.183" endtime="20220823 11:40:57.190"/>
+</iter>
+<iter>
+<var name="${i}">16</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Linktext}</var>
+<arg>(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220823 11:40:57.198" level="INFO">${Linktext} = Salon Travel</msg>
+<status status="PASS" starttime="20220823 11:40:57.191" endtime="20220823 11:40:57.198"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Linktext}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220823 11:40:57.198" endtime="20220823 11:40:57.199"/>
+</kw>
+<status status="PASS" starttime="20220823 11:40:57.191" endtime="20220823 11:40:57.199"/>
+</iter>
+<status status="PASS" starttime="20220823 11:40:57.047" endtime="20220823 11:40:57.199"/>
+</for>
+<status status="PASS" starttime="20220823 11:40:48.991" endtime="20220823 11:40:57.199"/>
+</test>
+<status status="PASS" starttime="20220823 11:40:48.716" endtime="20220823 11:40:57.200"/>
+</suite>
+<status status="PASS" starttime="20220823 11:40:48.698" endtime="20220823 11:40:57.202"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="GetallLinks">Suites.GetallLinks</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

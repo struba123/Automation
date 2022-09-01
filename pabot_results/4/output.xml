@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.6 on win32)" generated="20220823 11:40:25.469" rpa="false" schemaversion="3">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="DDT2 Excel" source="C:\Users\Saurabh\PycharmProjects\Automation\TestCases\DDT2_Excel.robot">
+<kw name="Open My Browser" library="Login_Resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220823 11:40:25.863" level="INFO">Opening browser 'Firefox' to base url 'https://admin-demo.nopcommerce.com/login?returnurl=%2Fadmin%2F'.</msg>
+<msg timestamp="20220823 11:40:25.864" level="INFO">Firefox driver log is always forced to to: C:\Users\Saurabh\PycharmProjects\Automation\pabot_results\4\geckodriver-1.log</msg>
+<status status="PASS" starttime="20220823 11:40:25.863" endtime="20220823 11:40:32.305"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220823 11:40:32.306" endtime="20220823 11:40:32.574"/>
+</kw>
+<status status="PASS" starttime="20220823 11:40:25.862" endtime="20220823 11:40:32.575"/>
+</kw>
+<test id="s1-s1-t1" name="LoginTestwithcsv" line="12">
+<kw name="Invalid login">
+<arg>${username}</arg>
+<arg>${Password}</arg>
+<msg timestamp="20220823 11:40:32.585" level="FAIL">Variable '${username}' not found.</msg>
+<status status="FAIL" starttime="20220823 11:40:32.582" endtime="20220823 11:40:32.585"/>
+</kw>
+<status status="FAIL" starttime="20220823 11:40:32.575" endtime="20220823 11:40:32.587">Variable '${username}' not found.</status>
+</test>
+<test id="s1-s1-t2" name="LoginTestwithcsv" line="12">
+<kw name="Invalid login">
+<arg>${username}</arg>
+<arg>${Password}</arg>
+<msg timestamp="20220823 11:40:32.593" level="FAIL">Variable '${username}' not found.</msg>
+<status status="FAIL" starttime="20220823 11:40:32.590" endtime="20220823 11:40:32.593"/>
+</kw>
+<status status="FAIL" starttime="20220823 11:40:32.588" endtime="20220823 11:40:32.597">Variable '${username}' not found.</status>
+</test>
+<test id="s1-s1-t3" name="LoginTestwithcsv" line="12">
+<kw name="Invalid login">
+<arg>${username}</arg>
+<arg>${Password}</arg>
+<msg timestamp="20220823 11:40:32.601" level="FAIL">Variable '${username}' not found.</msg>
+<status status="FAIL" starttime="20220823 11:40:32.599" endtime="20220823 11:40:32.601"/>
+</kw>
+<status status="FAIL" starttime="20220823 11:40:32.599" endtime="20220823 11:40:32.602">Variable '${username}' not found.</status>
+</test>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220823 11:40:32.603" endtime="20220823 11:40:33.431"/>
+</kw>
+<status status="FAIL" starttime="20220823 11:40:25.507" endtime="20220823 11:40:33.431"/>
+</suite>
+<status status="FAIL" starttime="20220823 11:40:25.485" endtime="20220823 11:40:33.432"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="3" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="0" fail="3" skip="0" id="s1-s1" name="DDT2 Excel">Suites.DDT2 Excel</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220823 11:40:32.588" level="WARN">Multiple tests with name 'LoginTestwithcsv' executed in suite 'Suites.DDT2 Excel'.</msg>
+<msg timestamp="20220823 11:40:32.599" level="WARN">Multiple tests with name 'LoginTestwithcsv' executed in suite 'Suites.DDT2 Excel'.</msg>
+</errors>
+</robot>

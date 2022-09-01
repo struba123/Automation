@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.6 on win32)" generated="20220901 10:39:30.471" rpa="false" schemaversion="3">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="DBTesting" source="C:\Users\Saurabh\PycharmProjects\Automation\TestCases\DBTesting.robot">
+<kw name="Connect To Database" type="SETUP">
+<arg>pymysql</arg>
+<arg>${DBName}</arg>
+<arg>${DBUser}</arg>
+<arg>${DBPass}</arg>
+<arg>${DBHost}</arg>
+<arg>${DBPort}</arg>
+<msg timestamp="20220901 10:39:30.553" level="FAIL">No keyword with name 'Connect To Database' found.</msg>
+<status status="FAIL" starttime="20220901 10:39:30.552" endtime="20220901 10:39:30.553"/>
+</kw>
+<test id="s1-s1-t1" name="Check David Record Present in Person table" line="31">
+<status status="FAIL" starttime="20220901 10:39:30.554" endtime="20220901 10:39:30.559">Parent suite setup failed:
+No keyword with name 'Connect To Database' found.</status>
+</test>
+<test id="s1-s1-t2" name="Check Jio Record Not Present in Person Table" line="34">
+<status status="FAIL" starttime="20220901 10:39:30.559" endtime="20220901 10:39:30.559">Parent suite setup failed:
+No keyword with name 'Connect To Database' found.</status>
+</test>
+<test id="s1-s1-t3" name="Check Person Table Exist in mysql Database" line="37">
+<status status="FAIL" starttime="20220901 10:39:30.561" endtime="20220901 10:39:30.562">Parent suite setup failed:
+No keyword with name 'Connect To Database' found.</status>
+</test>
+<test id="s1-s1-t4" name="Verify Row Count is Zero" line="40">
+<status status="FAIL" starttime="20220901 10:39:30.562" endtime="20220901 10:39:30.564">Parent suite setup failed:
+No keyword with name 'Connect To Database' found.</status>
+</test>
+<test id="s1-s1-t5" name="Verify Row Count is Equal to Some Value" line="43">
+<status status="FAIL" starttime="20220901 10:39:30.564" endtime="20220901 10:39:30.565">Parent suite setup failed:
+No keyword with name 'Connect To Database' found.</status>
+</test>
+<test id="s1-s1-t6" name="Verify Row Count is Greater than Some Value" line="46">
+<status status="FAIL" starttime="20220901 10:39:30.566" endtime="20220901 10:39:30.567">Parent suite setup failed:
+No keyword with name 'Connect To Database' found.</status>
+</test>
+<test id="s1-s1-t7" name="Verify Row Count is Less than Some Value" line="49">
+<status status="FAIL" starttime="20220901 10:39:30.568" endtime="20220901 10:39:30.569">Parent suite setup failed:
+No keyword with name 'Connect To Database' found.</status>
+</test>
+<test id="s1-s1-t8" name="Update Record in Person Table" line="52">
+<status status="FAIL" starttime="20220901 10:39:30.569" endtime="20220901 10:39:30.571">Parent suite setup failed:
+No keyword with name 'Connect To Database' found.</status>
+</test>
+<test id="s1-s1-t9" name="Retrieve Records from Person Table" line="57">
+<status status="FAIL" starttime="20220901 10:39:30.571" endtime="20220901 10:39:30.572">Parent suite setup failed:
+No keyword with name 'Connect To Database' found.</status>
+</test>
+<test id="s1-s1-t10" name="Delete Records from Person Table" line="61">
+<status status="FAIL" starttime="20220901 10:39:30.573" endtime="20220901 10:39:30.575">Parent suite setup failed:
+No keyword with name 'Connect To Database' found.</status>
+</test>
+<kw name="Disconnect From Database" type="TEARDOWN">
+<msg timestamp="20220901 10:39:30.583" level="FAIL">No keyword with name 'Disconnect From Database' found.</msg>
+<status status="FAIL" starttime="20220901 10:39:30.583" endtime="20220901 10:39:30.583">No keyword with name 'Disconnect From Database' found.</status>
+</kw>
+<status status="FAIL" starttime="20220901 10:39:30.517" endtime="20220901 10:39:30.583">Suite setup failed:
+No keyword with name 'Connect To Database' found.
+
+Also suite teardown failed:
+No keyword with name 'Disconnect From Database' found.</status>
+</suite>
+<status status="FAIL" starttime="20220901 10:39:30.484" endtime="20220901 10:39:30.585"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="10" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="10" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="0" fail="10" skip="0" id="s1-s1" name="DBTesting">Suites.DBTesting</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220901 10:39:30.517" level="ERROR">Error in file 'C:\Users\Saurabh\PycharmProjects\Automation\TestCases\DBTesting.robot' on line 2: Importing library 'DatabaseLibrary' failed: ModuleNotFoundError: No module named 'DatabaseLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\Saurabh\AppData\Local\Programs\Python\Python310\Scripts\robot.exe
+  C:\Users\Saurabh\AppData\Local\Programs\Python\Python310\python310.zip
+  C:\Users\Saurabh\AppData\Local\Programs\Python\Python310\DLLs
+  C:\Users\Saurabh\AppData\Local\Programs\Python\Python310\lib
+  C:\Users\Saurabh\AppData\Local\Programs\Python\Python310
+  C:\Users\Saurabh\AppData\Local\Programs\Python\Python310\lib\site-packages</msg>
+</errors>
+</robot>

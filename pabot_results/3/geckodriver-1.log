@@ -1,0 +1,19 @@
+1661235010800	geckodriver	INFO	Listening on 127.0.0.1:54042
+1661235013698	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54043" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Saurabh\\AppData\\Local\\Temp\\rust_mozprofileYOmCNR"
+1661235014257	Marionette	INFO	Marionette enabled
+1661235014264	Marionette	INFO	Listening on port 54079
+WebDriver BiDi listening on ws://localhost:54043
+Read port: 54079
+1661235014429	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Saurabh\\AppData\\Local\\Temp\\rust_mozprofileYOmCNR\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:54043/devtools/browser/d37e0706-e300-47c7-abc8-7b7b5a78ac8c
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://admin-demo.nopcommerce.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://admin-demo.nopcommerce.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://admin-demo.nopcommerce.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://admin-demo.nopcommerce.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://admin-demo.nopcommerce.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://admin-demo.nopcommerce.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1661235023824	Marionette	INFO	Stopped listening on port 54079

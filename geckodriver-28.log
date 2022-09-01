@@ -1,0 +1,23 @@
+1660739062873	geckodriver	INFO	Listening on 127.0.0.1:64330
+1660739066001	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64331" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Saurabh\\AppData\\Local\\Temp\\rust_mozprofileIxI5DJ"
+1660739066516	Marionette	INFO	Marionette enabled
+1660739066523	Marionette	INFO	Listening on port 64341
+WebDriver BiDi listening on ws://localhost:64331
+Read port: 64341
+1660739066737	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Saurabh\\AppData\\Local\\Temp\\rust_mozprofileIxI5DJ\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:64331/devtools/browser/334addc2-76f0-407d-a7fb-d6be830f6e66
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 769))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 421))
+JavaScript error: http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js, line 6: Error: Bootstrap's JavaScript requires jQuery
+JavaScript error: https://demo.automationtesting.in/angcontroller.js, line 6: ReferenceError: angular is not defined
+JavaScript error: https://googleads.g.doubleclick.net/pagead/html/r20220815/r20110914/zrt_lookup.html?fsb=1#RS-1-&adk=1812271801&client=ca-pub-9173866185064071&fa=1&ifi=7&uci=a!7&xpc=TGU9e563Zk&p=https%3A//demo.automationtesting.in, line 24: ReferenceError: osdlfm is not defined
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lIG_-rjQweUtsPTJkqViasoL1XPo6OtXzg5InKx-NMQ.js line 2 > eval line 1949 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/dJtiYfEJEI0hyw5wQ_g_8NlKRsHdja2JZeZ5T9NF0jg.js line 2 > eval line 4444 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1660739181285	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:237:24
+TimedPromise@chrome://remote/content/marionette/sync.js:222:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1660739330243	Marionette	INFO	Stopped listening on port 64341
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.

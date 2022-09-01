@@ -1,0 +1,12 @@
+1661235196150	geckodriver	INFO	Listening on 127.0.0.1:55046
+1661235199194	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "55047" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Saurabh\\AppData\\Local\\Temp\\rust_mozprofileT4W18E"
+1661235199690	Marionette	INFO	Marionette enabled
+1661235199698	Marionette	INFO	Listening on port 55079
+WebDriver BiDi listening on ws://localhost:55047
+Read port: 55079
+1661235199881	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Saurabh\\AppData\\Local\\Temp\\rust_mozprofileT4W18E\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:55047/devtools/browser/b2c25f07-7e53-4a86-8dca-e22bd9227f90
+1661235256914	Marionette	INFO	Stopped listening on port 55079
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+[Parent 62236, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:723

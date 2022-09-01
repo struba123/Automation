@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.6 on win32)" generated="20220901 10:38:11.404" rpa="false" schemaversion="3">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Radiobuttons" source="C:\Users\Saurabh\PycharmProjects\Automation\TestCases\Radiobuttons.robot">
+<test id="s1-s1-t1" name="Testing Radio Buttons and Checkbox" line="12">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220901 10:38:11.778" level="INFO">Opening browser 'Firefox' to base url 'http://www.practiseselenium.com/practise-form.html'.</msg>
+<msg timestamp="20220901 10:38:11.781" level="INFO">Firefox driver log is always forced to to: C:\Users\Saurabh\PycharmProjects\Automation\Results\pabot_results\14\geckodriver-1.log</msg>
+<msg timestamp="20220901 10:38:18.438" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220901 10:38:18.438" level="FAIL">WebDriverException: Message: Reached error page: about:neterror?e=dnsNotFound&amp;u=http%3A//www.practiseselenium.com/practise-form.html&amp;c=UTF-8&amp;d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20www.practiseselenium.com.
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.jsm:12:1
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:192:5
+UnknownError@chrome://remote/content/shared/webdriver/Errors.jsm:519:5
+checkReadyState@chrome://remote/content/marionette/navigate.js:66:24
+onNavigation@chrome://remote/content/marionette/navigate.js:334:39
+emit@resource://gre/modules/EventEmitter.jsm:160:20
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteEventsParent.jsm:44:25
+</msg>
+<status status="FAIL" starttime="20220901 10:38:11.777" endtime="20220901 10:38:18.481"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20220901 10:38:18.482" endtime="20220901 10:38:18.482"/>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>sex</arg>
+<arg>female</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="NOT RUN" starttime="20220901 10:38:18.482" endtime="20220901 10:38:18.482"/>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>exp</arg>
+<arg>5</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="NOT RUN" starttime="20220901 10:38:18.483" endtime="20220901 10:38:18.483"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>BlackTea</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220901 10:38:18.483" endtime="20220901 10:38:18.483"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>RedTea</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220901 10:38:18.483" endtime="20220901 10:38:18.484"/>
+</kw>
+<kw name="Unselect Checkbox" library="SeleniumLibrary">
+<arg>BlackTea</arg>
+<doc>Removes the selection of checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220901 10:38:18.484" endtime="20220901 10:38:18.484"/>
+</kw>
+<status status="FAIL" starttime="20220901 10:38:11.777" endtime="20220901 10:38:18.485">WebDriverException: Message: Reached error page: about:neterror?e=dnsNotFound&amp;u=http%3A//www.practiseselenium.com/practise-form.html&amp;c=UTF-8&amp;d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20www.practiseselenium.com.
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.jsm:12:1
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:192:5
+UnknownError@chrome://remote/content/shared/webdriver/Errors.jsm:519:5
+checkReadyState@chrome://remote/content/marionette/navigate.js:66:24
+onNavigation@chrome://remote/content/marionette/navigate.js:334:39
+emit@resource://gre/modules/EventEmitter.jsm:160:20
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteEventsParent.jsm:44:25
+</status>
+</test>
+<status status="FAIL" starttime="20220901 10:38:11.438" endtime="20220901 10:38:18.486"/>
+</suite>
+<status status="FAIL" starttime="20220901 10:38:11.416" endtime="20220901 10:38:18.488"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Radiobuttons">Suites.Radiobuttons</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,7 @@
+1661064874802	geckodriver	INFO	Listening on 127.0.0.1:60868
+1661064877880	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "60869" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Saurabh\\AppData\\Local\\Temp\\rust_mozprofileYxcG5g"
+1661064878429	Marionette	INFO	Marionette enabled
+1661064878438	Marionette	INFO	Listening on port 60878
+WebDriver BiDi listening on ws://localhost:60869
+Read port: 60878
+1661064878684	RemoteAgent	WARN	TLS certificate errors will be ignored for this session

@@ -1,0 +1,20 @@
+1660738601344	geckodriver	INFO	Listening on 127.0.0.1:63933
+1660738604441	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63934" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Saurabh\\AppData\\Local\\Temp\\rust_mozprofileGLxRXN"
+1660738605298	Marionette	INFO	Marionette enabled
+1660738605306	Marionette	INFO	Listening on port 63945
+WebDriver BiDi listening on ws://localhost:63934
+Read port: 63945
+1660738605548	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Saurabh\\AppData\\Local\\Temp\\rust_mozprofileGLxRXN\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:63934/devtools/browser/fd49b633-1147-42d4-ae57-ccbcec1f849a
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 769))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 421))
+JavaScript error: http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js, line 6: Error: Bootstrap's JavaScript requires jQuery
+JavaScript warning: https://pagead2.googlesyndication.com/bg/dJtiYfEJEI0hyw5wQ_g_8NlKRsHdja2JZeZ5T9NF0jg.js line 2 > eval line 3752 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/dJtiYfEJEI0hyw5wQ_g_8NlKRsHdja2JZeZ5T9NF0jg.js line 2 > eval line 5456 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js, line 6: TypeError: Bootstrap's JavaScript requires jQuery. jQuery must be included before Bootstrap's JavaScript.
+JavaScript error: https://www.selenium.dev/js/main.min.1a2e43037d7eeb7eb548659ffab8adc920ddeef68063a09913f04392dd3c1f19.js, line 1: ReferenceError: jQuery is not defined
+1660739038365	Marionette	INFO	Stopped listening on port 63945
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+[Parent 22240, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167

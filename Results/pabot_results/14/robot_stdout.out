@@ -1,0 +1,34 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.Radiobuttons                                                           
+==============================================================================
+Testing Radio Buttons and Checkbox                                      
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Saurabh\PycharmProjects\Automation\TestCases\Radiobuttons.robot:12
+    T:  Testing Radio Buttons and Checkbox    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Saurabh\PycharmProjects\Automation\TestCases\Radiobuttons.robot:13
+      Open Browser    ${url}    ${browser}
+      |  ${url} = http://www.practiseselenium.com/practise-form.html (str)
+      |  ${browser} = Firefox (str)
+______________________________________________________________________________
+| FAIL |
+WebDriverException: Message: Reached error page: about:neterror?e=dnsNotFound&u=http%3A//www.practiseselenium.com/practise-form.html&c=UTF-8&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20www.practiseselenium.com.
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.jsm:12:1
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:192:5
+UnknownError@chrome://remote/content/shared/webdriver/Errors.jsm:519:5
+checkReadyState@chrome://remote/content/marionette/navigate.js:66:24
+onNavigation@chrome://remote/content/marionette/navigate.js:334:39
+emit@resource://gre/modules/EventEmitter.jsm:160:20
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteEventsParent.jsm:44:25
+------------------------------------------------------------------------------
+Suites.Radiobuttons                                                   | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Suites                                                                | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\Saurabh\PycharmProjects\Automation\Results\pabot_results\14\output.xml

@@ -1,0 +1,14 @@
+1660842133443	geckodriver	INFO	Listening on 127.0.0.1:50408
+1660842136526	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50409" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Saurabh\\AppData\\Local\\Temp\\rust_mozprofileWFgDtg"
+1660842136954	Marionette	INFO	Marionette enabled
+1660842136960	Marionette	INFO	Listening on port 50418
+WebDriver BiDi listening on ws://localhost:50409
+Read port: 50418
+1660842137171	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Saurabh\\AppData\\Local\\Temp\\rust_mozprofileWFgDtg\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:50409/devtools/browser/8fad7a48-9ef3-4016-998e-f12cd5597773
+JavaScript warning: https://pagead2.googlesyndication.com/bg/BcUHUABoavvpRAX3o-C5BfAq8AHsMXRVb9HgeqDHxZ8.js line 2 > eval line 2753 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1660842152854	Marionette	INFO	Stopped listening on port 50418
+!!! error running onStopped callback: TypeError: callback is not a function
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1109: Error: Sqlite.jsm has been shutdown. Cannot open connection to: C:\Users\Saurabh\AppData\Local\Temp\rust_mozprofileWFgDtg\protections.sqlite

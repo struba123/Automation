@@ -1,0 +1,75 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.DDT1                                                                   
+==============================================================================
+Right user empty pass                                                 | PASS |
+------------------------------------------------------------------------------
+Right user wrong pass                                                 | PASS |
+------------------------------------------------------------------------------
+Wrong user right pass                                                   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Saurabh\PycharmProjects\Automation\TestCases\DDT1.robot:12
+    T:  Wrong user right pass    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Saurabh\PycharmProjects\Automation\TestCases\DDT1.robot:12
+      Invalid login    admin@yourstore.com    admin
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Saurabh\PycharmProjects\Automation\TestCases\DDT1.robot:23
+      Error Message should be visible    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Saurabh\PycharmProjects\Automation\Resources\Login_Resources.robot:27
+      Page Should Contain    Login was unsuccessful
+______________________________________________________________________________
+| FAIL |
+Page should have contained text 'Login was unsuccessful' but did not.
+------------------------------------------------------------------------------
+Wrong user empty pass                                                   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Saurabh\PycharmProjects\Automation\TestCases\DDT1.robot:13
+    T:  Wrong user empty pass    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Saurabh\PycharmProjects\Automation\TestCases\DDT1.robot:13
+      Invalid login    admin@yourstore.com    ${empty}
+      |  ${empty} =  (str)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Saurabh\PycharmProjects\Automation\TestCases\DDT1.robot:20
+      Input Username    ${username}
+      |  ${username} = admin@yourstore.com (str)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Saurabh\PycharmProjects\Automation\Resources\Login_Resources.robot:18
+      Input Text    id:Email    ${username}
+      |  ${username} = admin@yourstore.com (str)
+______________________________________________________________________________
+| FAIL |
+Element with locator 'id:Email' not found.
+------------------------------------------------------------------------------
+Wrong user wrong pass                                                   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Saurabh\PycharmProjects\Automation\TestCases\DDT1.robot:14
+    T:  Wrong user wrong pass    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Saurabh\PycharmProjects\Automation\TestCases\DDT1.robot:14
+      Invalid login    admin@yourstore.com    xyz
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Saurabh\PycharmProjects\Automation\TestCases\DDT1.robot:20
+      Input Username    ${username}
+      |  ${username} = admin@yourstore.com (str)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Saurabh\PycharmProjects\Automation\Resources\Login_Resources.robot:18
+      Input Text    id:Email    ${username}
+      |  ${username} = admin@yourstore.com (str)
+______________________________________________________________________________
+| FAIL |
+Element with locator 'id:Email' not found.
+------------------------------------------------------------------------------
+Suites.DDT1                                                           | FAIL |
+5 tests, 2 passed, 3 failed
+==============================================================================
+Suites                                                                | FAIL |
+5 tests, 2 passed, 3 failed
+==============================================================================
+Output:  C:\Users\Saurabh\PycharmProjects\Automation\Results\pabot_results\3\output.xml

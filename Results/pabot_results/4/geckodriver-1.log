@@ -1,0 +1,24 @@
+1662008807299	geckodriver	INFO	Listening on 127.0.0.1:49574
+1662008810382	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "49575" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Windows\\SystemTemp\\rust_mozprofilekGSEgI"
+1662008811524	Marionette	INFO	Marionette enabled
+1662008811530	Marionette	INFO	Listening on port 49593
+WebDriver BiDi listening on ws://localhost:49575
+Read port: 49593
+1662008811740	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RcANGLE(no compositor window)
+[GFX1-]: Failed to connect WebRenderBridgeChild. isParent=true
+[GFX1-]: Fallback WR to SW-WR + D3D11
+[GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0
+[GFX1-]: Failed to initialize CompositorD3D11 for SWGL: FEATURE_FAILURE_D3D11_SWAP_CHAIN
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Windows\\SystemTemp\\rust_mozprofilekGSEgI\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:49575/devtools/browser/e62d00dc-3e3d-4081-9766-75f8551b5b13
+console.error: services.settings: 
+  main/query-stripping Signature failed  InvalidSignatureError: Invalid content signature (main/query-stripping)
+console.error: services.settings: 
+  main/query-stripping local data was corrupted
+console.warn: services.settings: main/query-stripping Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/query-stripping Signature failed again InvalidSignatureError: Invalid content signature (main/query-stripping)
+1662008815371	Marionette	INFO	Stopped listening on port 49593
+!!! error running onStopped callback: TypeError: callback is not a function
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1108: Error: Sqlite.jsm has been shutdown. Cannot open connection to: C:\Windows\SystemTemp\rust_mozprofilekGSEgI\protections.sqlite

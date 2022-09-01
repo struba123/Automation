@@ -1,0 +1,24 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.Tabbedwindows                                                          
+==============================================================================
+TabbedWindowTest                                                        
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Saurabh\PycharmProjects\Automation\TestCases\Tabbedwindows.robot:7
+    T:  TabbedWindowTest    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Saurabh\PycharmProjects\Automation\TestCases\Tabbedwindows.robot:10
+      Switch Window    title=Sakinalium | Home
+______________________________________________________________________________
+| FAIL |
+Unable to locate window with title 'Sakinalium | Home'.
+------------------------------------------------------------------------------
+Suites.Tabbedwindows                                                  | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Suites                                                                | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\Saurabh\PycharmProjects\Automation\pabot_results\21\output.xml

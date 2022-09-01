@@ -1,0 +1,26 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.ImplicitWaitTest                                                       
+==============================================================================
+RegTest                                                               0 seconds
+10 seconds
+  
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Saurabh\PycharmProjects\Automation\TestCases\ImplicitWaitTest.robot:7
+    T:  RegTest    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Saurabh\PycharmProjects\Automation\TestCases\ImplicitWaitTest.robot:20
+      Input Text    name:FirstName1    David
+______________________________________________________________________________
+| FAIL |
+Element with locator 'name:FirstName1' not found.
+------------------------------------------------------------------------------
+Suites.ImplicitWaitTest                                               | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Suites                                                                | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\Saurabh\PycharmProjects\Automation\pabot_results\9\output.xml

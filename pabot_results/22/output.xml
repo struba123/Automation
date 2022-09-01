@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.6 on win32)" generated="20220823 11:42:58.694" rpa="false" schemaversion="3">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="TableDemo" source="C:\Users\Saurabh\PycharmProjects\Automation\TestCases\TableDemo.robot">
+<test id="s1-s1-t1" name="TableValidations" line="6">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://testautomationpractice.blogspot.com/</arg>
+<arg>Firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220823 11:42:59.437" level="INFO">Opening browser 'Firefox' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<msg timestamp="20220823 11:42:59.449" level="INFO">Firefox driver log is always forced to to: C:\Users\Saurabh\PycharmProjects\Automation\pabot_results\22\geckodriver-1.log</msg>
+<status status="PASS" starttime="20220823 11:42:59.437" endtime="20220823 11:43:12.691"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220823 11:43:12.691" endtime="20220823 11:43:12.953"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows}</var>
+<arg>//table[@name='BookTable']/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220823 11:43:13.001" level="INFO">${rows} = 7</msg>
+<status status="PASS" starttime="20220823 11:43:12.953" endtime="20220823 11:43:13.001"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${columns}</var>
+<arg>//table[@name='BookTable']/tbody/tr[1]/th</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220823 11:43:13.012" level="INFO">${columns} = 4</msg>
+<status status="PASS" starttime="20220823 11:43:13.002" endtime="20220823 11:43:13.012"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${rows}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220823 11:43:13.012" endtime="20220823 11:43:13.013"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${columns}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220823 11:43:13.013" endtime="20220823 11:43:13.013"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${data}</var>
+<arg>//table[@name='BookTable']/tbody/tr[5]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220823 11:43:13.039" level="INFO">${data} = Master In Selenium</msg>
+<status status="PASS" starttime="20220823 11:43:13.013" endtime="20220823 11:43:13.039"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${data}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220823 11:43:13.040" endtime="20220823 11:43:13.040"/>
+</kw>
+<kw name="Table Column Should Contain" library="SeleniumLibrary">
+<arg>//table[@name='BookTable']</arg>
+<arg>2</arg>
+<arg>Author</arg>
+<doc>Verifies table column contains text ``expected``.</doc>
+<status status="PASS" starttime="20220823 11:43:13.040" endtime="20220823 11:43:13.059"/>
+</kw>
+<kw name="Table Row Should Contain" library="SeleniumLibrary">
+<arg>//table[@name='BookTable']</arg>
+<arg>4</arg>
+<arg>Learn JS</arg>
+<doc>Verifies that table row contains text ``expected``.</doc>
+<status status="PASS" starttime="20220823 11:43:13.059" endtime="20220823 11:43:13.091"/>
+</kw>
+<kw name="Table Cell Should Contain" library="SeleniumLibrary">
+<arg>//table[@name='BookTable']</arg>
+<arg>5</arg>
+<arg>2</arg>
+<arg>Mukesh</arg>
+<doc>Verifies table cell contains text ``expected``.</doc>
+<msg timestamp="20220823 11:43:13.108" level="INFO">Table cell contains 'Mukesh'.</msg>
+<status status="PASS" starttime="20220823 11:43:13.091" endtime="20220823 11:43:13.108"/>
+</kw>
+<kw name="Table Header Should Contain" library="SeleniumLibrary">
+<arg>//table[@name='BookTable']</arg>
+<arg>BookName</arg>
+<doc>Verifies table header contains text ``expected``.</doc>
+<status status="PASS" starttime="20220823 11:43:13.108" endtime="20220823 11:43:13.122"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220823 11:43:13.122" endtime="20220823 11:43:14.445"/>
+</kw>
+<status status="PASS" starttime="20220823 11:42:59.437" endtime="20220823 11:43:14.445"/>
+</test>
+<status status="PASS" starttime="20220823 11:42:58.960" endtime="20220823 11:43:14.447"/>
+</suite>
+<status status="PASS" starttime="20220823 11:42:58.884" endtime="20220823 11:43:14.448"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="TableDemo">Suites.TableDemo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

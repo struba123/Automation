@@ -1,0 +1,25 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.TimeOutTests                                                           
+==============================================================================
+RegTest                                                               5 seconds
+  
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Saurabh\PycharmProjects\Automation\TestCases\TimeOutTests.robot:7
+    T:  RegTest    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Saurabh\PycharmProjects\Automation\TestCases\TimeOutTests.robot:14
+      Set Selenium Timeout    10    seconds
+______________________________________________________________________________
+| FAIL |
+Keyword 'SeleniumLibrary.Set Selenium Timeout' expected 1 argument, got 2.
+------------------------------------------------------------------------------
+Suites.TimeOutTests                                                   | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Suites                                                                | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\Saurabh\PycharmProjects\Automation\pabot_results\24\output.xml

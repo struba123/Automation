@@ -1,0 +1,26 @@
+1662008864834	geckodriver	INFO	Listening on 127.0.0.1:49863
+1662008867917	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "49864" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Windows\\SystemTemp\\rust_mozprofile40KRiu"
+1662008868593	Marionette	INFO	Marionette enabled
+1662008868600	Marionette	INFO	Listening on port 49900
+WebDriver BiDi listening on ws://localhost:49864
+Read port: 49900
+1662008868832	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RcANGLE(no compositor window)
+[GFX1-]: Failed to connect WebRenderBridgeChild. isParent=true
+[GFX1-]: Fallback WR to SW-WR + D3D11
+[GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0
+[GFX1-]: Failed to initialize CompositorD3D11 for SWGL: FEATURE_FAILURE_D3D11_SWAP_CHAIN
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Windows\\SystemTemp\\rust_mozprofile40KRiu\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:49864/devtools/browser/73c5675c-5236-4e49-bfb9-2fe51ac0b32e
+console.error: services.settings: 
+  main/query-stripping Signature failed  InvalidSignatureError: Invalid content signature (main/query-stripping)
+console.error: services.settings: 
+  main/query-stripping local data was corrupted
+console.warn: services.settings: main/query-stripping Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/query-stripping Signature failed again InvalidSignatureError: Invalid content signature (main/query-stripping)
+JavaScript warning: https://pagead2.googlesyndication.com/bg/X5Wcp9Ugq7sZToVDu26YRTjm5OYazRuFrO0o8wz5lEo.js line 2 > eval line 4430 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+1662008972257	Marionette	INFO	Stopped listening on port 49900
+[Parent 21028, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+[Parent 21028, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167

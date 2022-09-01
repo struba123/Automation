@@ -1,0 +1,28 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.Tagging                                                                
+==============================================================================
+TC1 User RegistrationTest                                             This is user Reg Test
+User Registration Test is Over
+| PASS |
+------------------------------------------------------------------------------
+TC2 LoginTest                                                         This is Login Test
+Login Test is Over
+| PASS |
+------------------------------------------------------------------------------
+TC3 Change User Setting                                               This is Changein user Settings
+Change User Settings is Over
+| PASS |
+------------------------------------------------------------------------------
+TC4 Logout Test                                                       This is Logout Test
+Logout Test is Over
+| PASS |
+------------------------------------------------------------------------------
+Suites.Tagging                                                        | PASS |
+4 tests, 4 passed, 0 failed
+==============================================================================
+Suites                                                                | PASS |
+4 tests, 4 passed, 0 failed
+==============================================================================
+Output:  C:\Users\Saurabh\PycharmProjects\Automation\Results\pabot_results\23\output.xml

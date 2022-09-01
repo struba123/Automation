@@ -1,0 +1,75 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.DBTesting                                                              
+==============================================================================
+  
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Saurabh\PycharmProjects\Automation\TestCases\DBTesting.robot:5
+      Connect To Database    pymysql    ${DBName}    ${DBUser}    ${DBPass}    ${DBHost}    ${DBPort}
+      |  ${DBName} = mysql (str)
+      |  ${DBUser} = root (str)
+      |  ${DBPass} = Bholu17@ (str)
+      |  ${DBHost} = localhost (str)
+      |  ${DBPort} = 3306 (str)
+______________________________________________________________________________
+Check David Record Present in Person table                            | FAIL |
+Parent suite setup failed:
+No keyword with name 'Connect To Database' found.
+------------------------------------------------------------------------------
+Check Jio Record Not Present in Person Table                          | FAIL |
+Parent suite setup failed:
+No keyword with name 'Connect To Database' found.
+------------------------------------------------------------------------------
+Check Person Table Exist in mysql Database                            | FAIL |
+Parent suite setup failed:
+No keyword with name 'Connect To Database' found.
+------------------------------------------------------------------------------
+Verify Row Count is Zero                                              | FAIL |
+Parent suite setup failed:
+No keyword with name 'Connect To Database' found.
+------------------------------------------------------------------------------
+Verify Row Count is Equal to Some Value                               | FAIL |
+Parent suite setup failed:
+No keyword with name 'Connect To Database' found.
+------------------------------------------------------------------------------
+Verify Row Count is Greater than Some Value                           | FAIL |
+Parent suite setup failed:
+No keyword with name 'Connect To Database' found.
+------------------------------------------------------------------------------
+Verify Row Count is Less than Some Value                              | FAIL |
+Parent suite setup failed:
+No keyword with name 'Connect To Database' found.
+------------------------------------------------------------------------------
+Update Record in Person Table                                         | FAIL |
+Parent suite setup failed:
+No keyword with name 'Connect To Database' found.
+------------------------------------------------------------------------------
+Retrieve Records from Person Table                                    | FAIL |
+Parent suite setup failed:
+No keyword with name 'Connect To Database' found.
+------------------------------------------------------------------------------
+Delete Records from Person Table                                      | FAIL |
+Parent suite setup failed:
+No keyword with name 'Connect To Database' found.
+------------------------------------------------------------------------------
+  
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Saurabh\PycharmProjects\Automation\TestCases\DBTesting.robot:6
+      Disconnect From Database    
+______________________________________________________________________________
+Suites.DBTesting                                                      | FAIL |
+Suite setup failed:
+No keyword with name 'Connect To Database' found.
+
+Also suite teardown failed:
+No keyword with name 'Disconnect From Database' found.
+
+10 tests, 0 passed, 10 failed
+==============================================================================
+Suites                                                                | FAIL |
+10 tests, 0 passed, 10 failed
+==============================================================================
+Output:  C:\Users\Saurabh\PycharmProjects\Automation\Results\pabot_results\26\output.xml

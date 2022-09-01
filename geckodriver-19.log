@@ -1,0 +1,14 @@
+1660734839082	geckodriver	INFO	Listening on 127.0.0.1:57300
+1660734842161	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "57301" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Saurabh\\AppData\\Local\\Temp\\rust_mozprofileOk9PNo"
+1660734842582	Marionette	INFO	Marionette enabled
+1660734842589	Marionette	INFO	Listening on port 57310
+Read port: 57310
+WebDriver BiDi listening on ws://localhost:57301
+1660734842816	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Saurabh\\AppData\\Local\\Temp\\rust_mozprofileOk9PNo\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:57301/devtools/browser/b1cd2df8-161a-4602-ae48-fe7c4e9e2a36
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 769))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 421))
+1660734860812	Marionette	INFO	Stopped listening on port 57310
+console.error: services.settings: 
+  main/query-stripping Signature failed  TypeError: NetworkError: Network request failed

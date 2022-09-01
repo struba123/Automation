@@ -1,0 +1,15 @@
+1660734132537	geckodriver	INFO	Listening on 127.0.0.1:56712
+1660734135619	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "56713" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Saurabh\\AppData\\Local\\Temp\\rust_mozprofileH9y8V4"
+1660734136022	Marionette	INFO	Marionette enabled
+1660734136028	Marionette	INFO	Listening on port 56723
+WebDriver BiDi listening on ws://localhost:56713
+Read port: 56723
+1660734136248	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Saurabh\\AppData\\Local\\Temp\\rust_mozprofileH9y8V4\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:56713/devtools/browser/e223d30a-239e-40e9-9c95-8660d19e9ca0
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 769))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 421))
+JavaScript warning: http://demowebshop.tricentis.com/Scripts/jquery-1.10.2.min.js, line 19: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Shutting down due to socket process crash.
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+JavaScript error: chrome://global/content/elements/browser-custom-element.js, line 1627: Error: permitUnload is already running for this tab.

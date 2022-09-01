@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.6 on win32)" generated="20220823 11:42:50.956" rpa="false" schemaversion="3">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Tabbedwindows" source="C:\Users\Saurabh\PycharmProjects\Automation\TestCases\Tabbedwindows.robot">
+<test id="s1-s1-t1" name="TabbedWindowTest" line="7">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://demo.automationtesting.in/Windows.html</arg>
+<arg>Edge</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220823 11:42:51.204" level="INFO">Opening browser 'Edge' to base url 'https://demo.automationtesting.in/Windows.html'.</msg>
+<status status="PASS" starttime="20220823 11:42:51.204" endtime="20220823 11:42:55.855"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="Tabbed"]/a/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 11:42:55.858" level="INFO">Clicking element '//*[@id="Tabbed"]/a/button'.</msg>
+<status status="PASS" starttime="20220823 11:42:55.857" endtime="20220823 11:42:56.066"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>title=Sakinalium | Home</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<msg timestamp="20220823 11:42:57.502" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220823 11:42:57.502" level="FAIL">Unable to locate window with title 'Sakinalium | Home'.</msg>
+<status status="FAIL" starttime="20220823 11:42:56.067" endtime="20220823 11:42:57.537"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="main_navbar"]/ul/li[4]/a/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220823 11:42:57.537" endtime="20220823 11:42:57.537"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220823 11:42:57.537" endtime="20220823 11:42:57.537"/>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="NOT RUN" starttime="20220823 11:42:57.537" endtime="20220823 11:42:57.537"/>
+</kw>
+<status status="FAIL" starttime="20220823 11:42:51.204" endtime="20220823 11:42:57.537">Unable to locate window with title 'Sakinalium | Home'.</status>
+</test>
+<status status="FAIL" starttime="20220823 11:42:50.984" endtime="20220823 11:42:57.537"/>
+</suite>
+<status status="FAIL" starttime="20220823 11:42:50.965" endtime="20220823 11:42:57.537"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Tabbedwindows">Suites.Tabbedwindows</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

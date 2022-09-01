@@ -1,0 +1,31 @@
+datasources:2b4682e6cfa8a2cf0be5fb213492619794e8b4d0
+commandlineoptions:9f8598a690c7367accf83ead504756ddd374acc9
+suitesfrom:no-suites-from-option
+file:31cb5b9c40c99a9f38e7d0969e5642d929e1157c
+--suite Suites.Alert
+--suite Suites.Capturescreen
+--suite Suites.CloseAll
+--suite Suites.DDT1
+--suite Suites.DDT2 Excel
+--suite Suites.Dropdowns
+--suite Suites.ForLoopDemo
+--suite Suites.Frames
+--suite Suites.GetallLinks
+--suite Suites.ImplicitWaitTest
+--suite Suites.Inputbox
+--suite Suites.LoginTest
+--suite Suites.MouseOperations
+--suite Suites.NavigationKeyword
+--suite Suites.Radiobuttons
+--suite Suites.RegistrationTest
+--suite Suites.ScrollingPage
+--suite Suites.SetupandTeardown
+--suite Suites.Speedtests
+--suite Suites.SwitchMultipleBrowser
+--suite Suites.TC1
+--suite Suites.Tabbedwindows
+--suite Suites.TableDemo
+--suite Suites.Tagging
+--suite Suites.TimeOutTests
+--suite Suites.UserKeywords
+--suite Suites.DBTesting

@@ -1,0 +1,54 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.DDT2 Excel                                                             
+==============================================================================
+LoginTestwithcsv                                                        
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Saurabh\PycharmProjects\Automation\TestCases\DDT2_Excel.robot:12
+    T:  LoginTestwithcsv    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Saurabh\PycharmProjects\Automation\TestCases\DDT2_Excel.robot:0
+      Invalid login    ${username}    ${Password}
+      |  ${username} = <Unable to define variable value>
+      |  ${Password} = <Unable to define variable value>
+______________________________________________________________________________
+| FAIL |
+Variable '${username}' not found.
+------------------------------------------------------------------------------
+LoginTestwithcsv                                                        
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Saurabh\PycharmProjects\Automation\TestCases\DDT2_Excel.robot:12
+    T:  LoginTestwithcsv    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Saurabh\PycharmProjects\Automation\TestCases\DDT2_Excel.robot:0
+      Invalid login    ${username}    ${Password}
+      |  ${username} = <Unable to define variable value>
+      |  ${Password} = <Unable to define variable value>
+______________________________________________________________________________
+| FAIL |
+Variable '${username}' not found.
+------------------------------------------------------------------------------
+LoginTestwithcsv                                                        
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Saurabh\PycharmProjects\Automation\TestCases\DDT2_Excel.robot:12
+    T:  LoginTestwithcsv    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Saurabh\PycharmProjects\Automation\TestCases\DDT2_Excel.robot:0
+      Invalid login    ${username}    ${Password}
+      |  ${username} = <Unable to define variable value>
+      |  ${Password} = <Unable to define variable value>
+______________________________________________________________________________
+| FAIL |
+Variable '${username}' not found.
+------------------------------------------------------------------------------
+Suites.DDT2 Excel                                                     | FAIL |
+3 tests, 0 passed, 3 failed
+==============================================================================
+Suites                                                                | FAIL |
+3 tests, 0 passed, 3 failed
+==============================================================================
+Output:  C:\Users\Saurabh\PycharmProjects\Automation\pabot_results\4\output.xml

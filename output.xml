@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.6 on win32)" generated="20220901 01:02:35.635" rpa="false" schemaversion="3">
+<suite id="s1" name="DBTesting" source="C:\Users\Saurabh\PycharmProjects\Automation\TestCases\DBTesting.robot">
+<kw name="Connect To Database" library="DatabaseLibrary" type="SETUP">
+<arg>pymysql</arg>
+<arg>${DBName}</arg>
+<arg>${DBUser}</arg>
+<arg>${DBPass}</arg>
+<arg>${DBHost}</arg>
+<arg>${DBPort}</arg>
+<doc>Loads the DB API 2.0 module given `dbapiModuleName` then uses it to
+connect to the database using `dbName`, `dbUsername`, and `dbPassword`.</doc>
+<msg timestamp="20220901 01:02:35.690" level="INFO">Connecting using : pymysql.connect(db=mysql, user=root, passwd=Bholu17@, host=localhost, port=3306, charset=None) </msg>
+<status status="PASS" starttime="20220901 01:02:35.668" endtime="20220901 01:02:35.701"/>
+</kw>
+<test id="s1-t1" name="Check David Record Present in Person table" line="31">
+<kw name="Check If Exists In Database" library="DatabaseLibrary">
+<arg>select id from mysql.person where first_name="David";</arg>
+<doc>Check if any row would be returned by given the input `selectStatement`. If there are no results, then this will
+throw an AssertionError. Set optional input `sansTran` to True to run command without an explicit transaction
+commit or rollback.</doc>
+<msg timestamp="20220901 01:02:35.703" level="INFO">Executing : Check If Exists In Database  |  select id from mysql.person where first_name="David"; </msg>
+<msg timestamp="20220901 01:02:35.703" level="INFO">Executing : Query  |  select id from mysql.person where first_name="David"; </msg>
+<status status="PASS" starttime="20220901 01:02:35.703" endtime="20220901 01:02:35.703"/>
+</kw>
+<status status="PASS" starttime="20220901 01:02:35.702" endtime="20220901 01:02:35.704"/>
+</test>
+<test id="s1-t2" name="Check Jio Record Not Present in Person Table" line="34">
+<kw name="Check If Not Exists In Database" library="DatabaseLibrary">
+<arg>select id from mysql.person where first_name="Jio";</arg>
+<doc>This is the negation of `check_if_exists_in_database`.</doc>
+<msg timestamp="20220901 01:02:35.706" level="INFO">Executing : Check If Not Exists In Database  |  select id from mysql.person where first_name="Jio"; </msg>
+<msg timestamp="20220901 01:02:35.706" level="INFO">Executing : Query  |  select id from mysql.person where first_name="Jio"; </msg>
+<msg timestamp="20220901 01:02:35.707" level="FAIL">Expected to have have no rows from 'select id from mysql.person where first_name="Jio";' but got some rows : ((104,),).</msg>
+<status status="FAIL" starttime="20220901 01:02:35.706" endtime="20220901 01:02:35.707"/>
+</kw>
+<status status="FAIL" starttime="20220901 01:02:35.705" endtime="20220901 01:02:35.708">Expected to have have no rows from 'select id from mysql.person where first_name="Jio";' but got some rows : ((104,),).</status>
+</test>
+<test id="s1-t3" name="Check Person Table Exist in mysql Database" line="37">
+<kw name="Table Must Exist" library="DatabaseLibrary">
+<arg>person</arg>
+<doc>Check if the table given exists in the database. Set optional input `sansTran` to True to run command without an
+explicit transaction commit or rollback.</doc>
+<msg timestamp="20220901 01:02:35.710" level="INFO">Executing : Table Must Exist  |  person </msg>
+<msg timestamp="20220901 01:02:35.710" level="INFO">Executing : Row Count  |  SELECT * FROM information_schema.tables WHERE table_name='person' </msg>
+<status status="PASS" starttime="20220901 01:02:35.710" endtime="20220901 01:02:35.712"/>
+</kw>
+<status status="PASS" starttime="20220901 01:02:35.709" endtime="20220901 01:02:35.713"/>
+</test>
+<test id="s1-t4" name="Verify Row Count is Zero" line="40">
+<kw name="Row Count Is 0" library="DatabaseLibrary">
+<arg>select * from mysql.person where first_name='xyz';</arg>
+<doc>Check if any rows are returned from the submitted `selectStatement`. If there are, then this will throw an
+AssertionError. Set optional input `sansTran` to True to run command without an explicit transaction commit or
+rollback.</doc>
+<msg timestamp="20220901 01:02:35.715" level="INFO">Executing : Row Count Is 0  |  select * from mysql.person where first_name='xyz'; </msg>
+<msg timestamp="20220901 01:02:35.715" level="INFO">Executing : Row Count  |  select * from mysql.person where first_name='xyz'; </msg>
+<status status="PASS" starttime="20220901 01:02:35.714" endtime="20220901 01:02:35.715"/>
+</kw>
+<status status="PASS" starttime="20220901 01:02:35.714" endtime="20220901 01:02:35.715"/>
+</test>
+<test id="s1-t5" name="Verify Row Count is Equal to Some Value" line="43">
+<kw name="Row Count Is Equal To X" library="DatabaseLibrary">
+<arg>select * from mysql.person where first_name='David';</arg>
+<arg>1</arg>
+<doc>Check if the number of rows returned from `selectStatement` is equal to the value submitted. If not, then this
+will throw an AssertionError. Set optional input `sansTran` to True to run command without an explicit
+transaction commit or rollback.</doc>
+<msg timestamp="20220901 01:02:35.719" level="INFO">Executing : Row Count Is Equal To X  |  select * from mysql.person where first_name='David';  |  1 </msg>
+<msg timestamp="20220901 01:02:35.719" level="INFO">Executing : Row Count  |  select * from mysql.person where first_name='David'; </msg>
+<status status="PASS" starttime="20220901 01:02:35.719" endtime="20220901 01:02:35.720"/>
+</kw>
+<status status="PASS" starttime="20220901 01:02:35.718" endtime="20220901 01:02:35.720"/>
+</test>
+<test id="s1-t6" name="Verify Row Count is Greater than Some Value" line="46">
+<kw name="Row Count Is Greater Than X" library="DatabaseLibrary">
+<arg>select * from mysql.person where first_name='David';</arg>
+<arg>0</arg>
+<doc>Check if the number of rows returned from `selectStatement` is greater than the value submitted. If not, then
+this will throw an AssertionError. Set optional input `sansTran` to True to run command without an explicit
+transaction commit or rollback.</doc>
+<msg timestamp="20220901 01:02:35.722" level="INFO">Executing : Row Count Is Greater Than X  |  select * from mysql.person where first_name='David';  |  0 </msg>
+<msg timestamp="20220901 01:02:35.722" level="INFO">Executing : Row Count  |  select * from mysql.person where first_name='David'; </msg>
+<status status="PASS" starttime="20220901 01:02:35.722" endtime="20220901 01:02:35.723"/>
+</kw>
+<status status="PASS" starttime="20220901 01:02:35.721" endtime="20220901 01:02:35.723"/>
+</test>
+<test id="s1-t7" name="Verify Row Count is Less than Some Value" line="49">
+<kw name="Row Count Is Less Than X" library="DatabaseLibrary">
+<arg>select * from mysql.person where first_name='David';</arg>
+<arg>5</arg>
+<doc>Check if the number of rows returned from `selectStatement` is less than the value submitted. If not, then this
+will throw an AssertionError. Set optional input `sansTran` to True to run command without an explicit
+transaction commit or rollback.</doc>
+<msg timestamp="20220901 01:02:35.725" level="INFO">Executing : Row Count Is Less Than X  |  select * from mysql.person where first_name='David';  |  5 </msg>
+<msg timestamp="20220901 01:02:35.725" level="INFO">Executing : Row Count  |  select * from mysql.person where first_name='David'; </msg>
+<status status="PASS" starttime="20220901 01:02:35.725" endtime="20220901 01:02:35.726"/>
+</kw>
+<status status="PASS" starttime="20220901 01:02:35.724" endtime="20220901 01:02:35.727"/>
+</test>
+<test id="s1-t8" name="Update Record in Person Table" line="52">
+<kw name="Execute Sql String" library="DatabaseLibrary">
+<var>${output}</var>
+<arg>Update mysql.person set first_name="Jio" where id=104;</arg>
+<doc>Executes the sqlString as SQL commands. Useful to pass arguments to your sql. Set optional input `sansTran` to
+True to run command without an explicit transaction commit or rollback.</doc>
+<msg timestamp="20220901 01:02:35.729" level="INFO">Executing : Execute SQL String  |  Update mysql.person set first_name="Jio" where id=104; </msg>
+<msg timestamp="20220901 01:02:35.730" level="INFO">${output} = None</msg>
+<status status="PASS" starttime="20220901 01:02:35.728" endtime="20220901 01:02:35.730"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${output}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220901 01:02:35.731" endtime="20220901 01:02:35.731"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${output}</arg>
+<arg>None</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<msg timestamp="20220901 01:02:35.732" level="INFO">Argument types are:
+&lt;class 'NoneType'&gt;
+&lt;class 'str'&gt;</msg>
+<status status="PASS" starttime="20220901 01:02:35.731" endtime="20220901 01:02:35.732"/>
+</kw>
+<status status="PASS" starttime="20220901 01:02:35.728" endtime="20220901 01:02:35.732"/>
+</test>
+<test id="s1-t9" name="Retrieve Records from Person Table" line="57">
+<kw name="Query" library="DatabaseLibrary">
+<var>@{QueryResults}</var>
+<arg>select * from mysql.person;</arg>
+<doc>Uses the input `selectStatement` to query for the values that will be returned as a list of tuples. Set optional
+input `sansTran` to True to run command without an explicit transaction commit or rollback.
+Set optional input `returnAsDict` to True to return values as a list of dictionaries.</doc>
+<msg timestamp="20220901 01:02:35.735" level="INFO">Executing : Query  |  select * from mysql.person; </msg>
+<msg timestamp="20220901 01:02:35.736" level="INFO">@{QueryResults} = [ (101, 'John', 'Cannady') | (102, 'David', 'Cannady') | (103, 'Smith', 'Cannady') | (104, 'Jio', 'Cannady') | (105, 'Tye', 'Cannady') ]</msg>
+<status status="PASS" starttime="20220901 01:02:35.735" endtime="20220901 01:02:35.736"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>many</arg>
+<arg>@{QueryResults}</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20220901 01:02:35.737" level="FAIL">Keyword 'BuiltIn.Log To Console' expected 1 to 4 arguments, got 6.</msg>
+<status status="FAIL" starttime="20220901 01:02:35.736" endtime="20220901 01:02:35.737"/>
+</kw>
+<status status="FAIL" starttime="20220901 01:02:35.733" endtime="20220901 01:02:35.737">Keyword 'BuiltIn.Log To Console' expected 1 to 4 arguments, got 6.</status>
+</test>
+<test id="s1-t10" name="Delete Records from Person Table" line="61">
+<kw name="Execute Sql String" library="DatabaseLibrary">
+<var>${output}</var>
+<arg>Delete from mysql.person;</arg>
+<doc>Executes the sqlString as SQL commands. Useful to pass arguments to your sql. Set optional input `sansTran` to
+True to run command without an explicit transaction commit or rollback.</doc>
+<msg timestamp="20220901 01:02:35.739" level="INFO">Executing : Execute SQL String  |  Delete from mysql.person; </msg>
+<msg timestamp="20220901 01:02:35.742" level="INFO">${output} = None</msg>
+<status status="PASS" starttime="20220901 01:02:35.739" endtime="20220901 01:02:35.742"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${output}</arg>
+<arg>None</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<msg timestamp="20220901 01:02:35.742" level="INFO">Argument types are:
+&lt;class 'NoneType'&gt;
+&lt;class 'str'&gt;</msg>
+<status status="PASS" starttime="20220901 01:02:35.742" endtime="20220901 01:02:35.742"/>
+</kw>
+<status status="PASS" starttime="20220901 01:02:35.739" endtime="20220901 01:02:35.743"/>
+</test>
+<kw name="Disconnect From Database" library="DatabaseLibrary" type="TEARDOWN">
+<doc>Disconnects from the database.</doc>
+<msg timestamp="20220901 01:02:35.744" level="INFO">Executing : Disconnect From Database</msg>
+<status status="PASS" starttime="20220901 01:02:35.744" endtime="20220901 01:02:35.744"/>
+</kw>
+<status status="FAIL" starttime="20220901 01:02:35.638" endtime="20220901 01:02:35.744"/>
+</suite>
+<statistics>
+<total>
+<stat pass="8" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="8" fail="2" skip="0" id="s1" name="DBTesting">DBTesting</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
